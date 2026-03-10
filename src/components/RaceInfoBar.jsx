@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { DRIVERS } from '../data/raceData';
 
-export default function RaceInfoBar({ race, driverStats, selectedDrivers }) {
+export default function RaceInfoBar({ race, driverStats, selectedDrivers, driverList }) {
   if (!race || !driverStats) return null;
 
-  const activeDrivers = DRIVERS.filter(d => selectedDrivers.includes(d.id));
+  const drivers = driverList ?? DRIVERS;
+  const activeDrivers = drivers.filter(d => selectedDrivers.includes(d.id));
 
   const fastestLapDriver = activeDrivers.reduce((best, d) => {
     const s = driverStats[d.id];

@@ -3,8 +3,9 @@ import { DRIVERS, TIRE_COLORS } from '../data/raceData';
 
 const TIRE_LABEL = { S: 'Soft', M: 'Medium', H: 'Hard' };
 
-export default function TireStrategy({ driverStats, totalLaps, selectedDrivers }) {
-  const activeDrivers = DRIVERS.filter(d => selectedDrivers.includes(d.id));
+export default function TireStrategy({ driverStats, totalLaps, selectedDrivers, driverList }) {
+  const drivers = driverList ?? DRIVERS;
+  const activeDrivers = drivers.filter(d => selectedDrivers.includes(d.id));
 
   return (
     <motion.div

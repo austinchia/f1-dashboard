@@ -44,8 +44,9 @@ const CustomTooltip = ({ active, payload, label }) => {
   );
 };
 
-export default function LapTimeChart({ data, selectedDrivers, pitStopLaps }) {
-  const activeDrivers = DRIVERS.filter(d => selectedDrivers.includes(d.id));
+export default function LapTimeChart({ data, selectedDrivers, driverList }) {
+  const drivers = driverList ?? DRIVERS;
+  const activeDrivers = drivers.filter(d => selectedDrivers.includes(d.id));
 
   // Y-axis domain: filter nulls, get range
   const allValues = data.flatMap(d => activeDrivers.map(dr => d[dr.id]).filter(Boolean));

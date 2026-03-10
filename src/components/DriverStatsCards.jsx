@@ -14,8 +14,9 @@ function StatItem({ label, value, accent }) {
   );
 }
 
-export default function DriverStatsCards({ driverStats, selectedDrivers, raceResults }) {
-  const activeDrivers = DRIVERS.filter(d => selectedDrivers.includes(d.id));
+export default function DriverStatsCards({ driverStats, selectedDrivers, driverList }) {
+  const drivers = driverList ?? DRIVERS;
+  const activeDrivers = drivers.filter(d => selectedDrivers.includes(d.id));
 
   if (!driverStats) return null;
 

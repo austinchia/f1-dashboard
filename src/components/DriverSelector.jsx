@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { DRIVERS } from '../data/raceData';
 
-export default function DriverSelector({ selected, onToggle, driverStats }) {
+export default function DriverSelector({ selected, onToggle, driverStats, driverList }) {
+  const drivers = driverList ?? DRIVERS;
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -9,7 +10,7 @@ export default function DriverSelector({ selected, onToggle, driverStats }) {
       transition={{ duration: 0.5, delay: 0.1 }}
       style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}
     >
-      {DRIVERS.map((driver, i) => {
+      {drivers.map((driver, i) => {
         const isActive = selected.includes(driver.id);
         const stats = driverStats?.[driver.id];
 

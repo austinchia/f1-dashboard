@@ -4,6 +4,7 @@ import {
 } from 'recharts';
 import { DRIVERS } from '../data/raceData';
 
+
 const CustomTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
 
@@ -37,8 +38,9 @@ const CustomTooltip = ({ active, payload, label }) => {
   );
 };
 
-export default function GapToLeaderChart({ data, selectedDrivers }) {
-  const activeDrivers = DRIVERS.filter(d => selectedDrivers.includes(d.id));
+export default function GapToLeaderChart({ data, selectedDrivers, driverList }) {
+  const drivers = driverList ?? DRIVERS;
+  const activeDrivers = drivers.filter(d => selectedDrivers.includes(d.id));
 
   return (
     <motion.div
