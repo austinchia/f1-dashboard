@@ -160,7 +160,7 @@ export default function App() {
               transition={{ duration: 0.3 }}
             >
               {/* Race finish bar chart — top of dashboard */}
-              <RaceFinishChart gapData={gapData} driverList={driverList} finishOrder={finishOrder} />
+              <RaceFinishChart gapData={gapData} driverList={driverList} finishOrder={finishOrder} driverStats={driverStats} totalLaps={race?.laps} />
 
               {/* Info bar */}
               <div style={{ marginBottom: '20px' }}>
