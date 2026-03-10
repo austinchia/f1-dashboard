@@ -8,6 +8,7 @@ import LapTimeChart from './components/LapTimeChart';
 import GapToLeaderChart from './components/GapToLeaderChart';
 import TireStrategy from './components/TireStrategy';
 import DriverStatsCards from './components/DriverStatsCards';
+import RaceFinishChart from './components/RaceFinishChart';
 import { LoadingSkeleton, ErrorState, EmptyState } from './components/LoadingState';
 
 import { DRIVERS, generateRaceData } from './data/raceData';
@@ -158,6 +159,9 @@ export default function App() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
+              {/* Race finish bar chart — top of dashboard */}
+              <RaceFinishChart gapData={gapData} driverList={driverList} />
+
               {/* Info bar */}
               <div style={{ marginBottom: '20px' }}>
                 <RaceInfoBar race={race} driverStats={driverStats} selectedDrivers={selectedDrivers} />
