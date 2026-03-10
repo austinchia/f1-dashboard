@@ -60,21 +60,30 @@ function formatGap(gap) {
 
 const MEDAL = ['#FFD700', '#C0C0C0', '#CD7F32'];
 
-export default function RaceFinishChart({ gapData, driverList }) {
+export default function RaceFinishChart({ gapData, driverList, finishOrder }) {
   const drivers = driverList ?? DRIVERS;
 
+  // finishOrder (from live /position endpoint) takes priority over gap-derived order
   const finishData = useMemo(() => {
+    if (finishOrder?.length) {
+      // Live mode: use authoritative position data, gaps from gapData last lap
+      return finishOrder.map(({ driver, gap }) => ({
+        driver,
+        gap: gap ?? 0,
+      }));
+    }
+    // Demo mode: derive order from cumulative gap at final lap
     if (!gapData?.length || !drivers?.length) return [];
     const lastLap = gapData[gapData.length - 1];
     return drivers
       .filter(d => lastLap[d.id] !== undefined)
       .map(d => ({ driver: d, gap: lastLap[d.id] ?? 0 }))
       .sort((a, b) => a.gap - b.gap);
-  }, [gapData, drivers]);
+  }, [finishOrder, gapData, drivers]);
 
   if (!finishData.length) return null;
 
-  const maxGap = finishData[finishData.length - 1]?.gap ?? 1;
+  const maxGap = finishData.reduce((m, e) => (e.gap > m ? e.gap : m), 1);
 
   // Bar widths: winner = 84%, last = 52%. Gaps exaggerated for visual clarity.
   const getBarPct = gap =>

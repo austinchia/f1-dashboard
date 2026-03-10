@@ -16,7 +16,7 @@ function padTime(sec) {
   return `${m}:${s}`;
 }
 
-export function transformBundle({ session, drivers, laps, stints, pits }) {
+export function transformBundle({ session, drivers, laps, stints, pits, positions }) {
   // Avoid Math.max(...largeArray) call-stack issues — use reduce instead
   const maxLapFromData = laps.reduce((max, l) => (l.lap_number != null && l.lap_number > max ? l.lap_number : max), 0);
   const totalLaps = session.total_laps ?? maxLapFromData;
@@ -149,5 +149,27 @@ export function transformBundle({ session, drivers, laps, stints, pits }) {
       : '2026',
   };
 
-  return { race, lapChartData, gapData, driverStats, driverList };
+  // Build finishing order from position endpoint (last recorded position per driver).
+  // This is the authoritative source — avoids the cumulative-lap-time method being
+  // thrown off by null lap_duration entries in the raw data.
+  const lastPositionPerDriver = {};
+  if (positions?.length) {
+    positions.forEach(p => {
+      const existing = lastPositionPerDriver[p.driver_number];
+      if (!existing || p.date > existing.date) {
+        lastPositionPerDriver[p.driver_number] = p;
+      }
+    });
+  }
+
+  const finishOrder = driverList
+    .map(driver => {
+      const pos = lastPositionPerDriver[driver.driverNumber];
+      const gap = pos ? (gapData[gapData.length - 1]?.[driver.id] ?? null) : null;
+      return { driver, position: pos?.position ?? 999, gap };
+    })
+    .filter(e => e.position !== 999)
+    .sort((a, b) => a.position - b.position);
+
+  return { race, lapChartData, gapData, driverStats, driverList, finishOrder };
 }

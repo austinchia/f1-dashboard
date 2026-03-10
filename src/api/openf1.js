@@ -33,6 +33,10 @@ export async function fetchPits(sessionKey) {
   return get(`/pit?session_key=${sessionKey}`);
 }
 
+export async function fetchPositions(sessionKey) {
+  return get(`/position?session_key=${sessionKey}`);
+}
+
 // Cache wrapper — avoids re-fetching same session in same browser tab
 const cache = new Map();
 
@@ -57,8 +61,10 @@ export async function fetchRaceBundle(meetingKey) {
   const stints = await fetchStints(sk);
   await delay(400);
   const pits = await fetchPits(sk);
+  await delay(400);
+  const positions = await fetchPositions(sk);
 
-  const bundle = { session, drivers, laps, stints, pits };
+  const bundle = { session, drivers, laps, stints, pits, positions };
   cache.set(meetingKey, bundle);
   return bundle;
 }

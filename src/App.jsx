@@ -82,7 +82,7 @@ export default function App() {
   const showAwaitSelection = isLive && !liveLoading && !liveError && !liveData && selectedMeeting;
   const showCharts = !isLive || (isLive && liveData);
 
-  const { race, lapChartData, gapData, driverStats } = activeData ?? {};
+  const { race, lapChartData, gapData, driverStats, finishOrder } = activeData ?? {};
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-primary)' }}>
@@ -160,7 +160,7 @@ export default function App() {
               transition={{ duration: 0.3 }}
             >
               {/* Race finish bar chart — top of dashboard */}
-              <RaceFinishChart gapData={gapData} driverList={driverList} />
+              <RaceFinishChart gapData={gapData} driverList={driverList} finishOrder={finishOrder} />
 
               {/* Info bar */}
               <div style={{ marginBottom: '20px' }}>
