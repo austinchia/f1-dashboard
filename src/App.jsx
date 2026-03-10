@@ -28,7 +28,7 @@ export default function App() {
   const mockData = useMemo(() => generateRaceData(selectedRace), [selectedRace]);
 
   // Live data (fetched on demand)
-  const { data: liveData, loading: liveLoading, error: liveError } = useRaceData(
+  const { data: liveData, loading: liveLoading, error: liveError, retry: liveRetry } = useRaceData(
     mode === 'live' ? selectedMeeting : null
   );
 
@@ -140,7 +140,7 @@ export default function App() {
 
           {showError && (
             <motion.div key="error">
-              <ErrorState message={liveError} />
+              <ErrorState message={liveError} onRetry={liveRetry} />
             </motion.div>
           )}
 

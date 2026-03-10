@@ -17,7 +17,10 @@ function padTime(sec) {
 }
 
 export function transformBundle({ session, drivers, laps, stints, pits }) {
-  const totalLaps = session.total_laps ?? Math.max(...laps.map(l => l.lap_number), 0);
+  // Avoid Math.max(...largeArray) call-stack issues — use reduce instead
+  const maxLapFromData = laps.reduce((max, l) => (l.lap_number != null && l.lap_number > max ? l.lap_number : max), 0);
+  const totalLaps = session.total_laps ?? maxLapFromData;
+  if (totalLaps === 0) throw new Error('Race lap data is not yet available for this session.');
 
   // Build driver map: number → driver object
   const driverMap = {};
@@ -27,7 +30,9 @@ export function transformBundle({ session, drivers, laps, stints, pits }) {
       name: d.full_name,
       team: d.team_name,
       shortTeam: d.team_name?.split(' ').slice(-1)[0] ?? d.team_name,
-      color: d.team_colour ? `#${d.team_colour}` : PALETTE[i % PALETTE.length],
+      color: d.team_colour
+        ? (d.team_colour.startsWith('#') ? d.team_colour : `#${d.team_colour}`)
+        : PALETTE[i % PALETTE.length],
       driverNumber: d.driver_number,
       headshotUrl: d.headshot_url,
     };

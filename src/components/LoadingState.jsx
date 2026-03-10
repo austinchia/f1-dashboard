@@ -37,7 +37,7 @@ export function LoadingSkeleton() {
   );
 }
 
-export function ErrorState({ message }) {
+export function ErrorState({ message, onRetry }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.97 }}
@@ -54,9 +54,27 @@ export function ErrorState({ message }) {
       <div className="orbitron" style={{ fontSize: '14px', color: 'rgba(232,0,45,0.8)', marginBottom: '8px' }}>
         Failed to load race data
       </div>
-      <div style={{ fontSize: '13px', color: 'rgba(238,238,255,0.4)', maxWidth: '400px', margin: '0 auto' }}>
+      <div style={{ fontSize: '13px', color: 'rgba(238,238,255,0.4)', maxWidth: '420px', margin: '0 auto 16px', fontFamily: 'monospace', background: 'rgba(0,0,0,0.3)', padding: '8px 12px', borderRadius: '6px', textAlign: 'left', wordBreak: 'break-word' }}>
         {message}
       </div>
+      {onRetry && (
+        <button
+          onClick={onRetry}
+          style={{
+            background: 'rgba(232,0,45,0.15)',
+            border: '1px solid rgba(232,0,45,0.35)',
+            color: '#e8002d',
+            padding: '8px 20px',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            fontSize: '12px',
+            fontFamily: 'Orbitron, monospace',
+            letterSpacing: '1px',
+          }}
+        >
+          RETRY
+        </button>
+      )}
     </motion.div>
   );
 }

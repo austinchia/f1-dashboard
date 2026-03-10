@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import { fetchMeetings, fetchRaceBundle } from '../api/openf1';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { fetchMeetings, fetchRaceBundle, clearCache } from '../api/openf1';
 import { transformBundle } from '../api/transform';
 
 export function useMeetings(year = 2026) {
@@ -29,9 +29,12 @@ export function useRaceData(meetingKey) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const prevKey = useRef(null);
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
-    if (!meetingKey || meetingKey === prevKey.current) return;
+    if (!meetingKey) return;
+    // Allow retry (retryCount changes) or new meeting
+    if (meetingKey === prevKey.current && retryCount === 0) return;
     prevKey.current = meetingKey;
 
     setLoading(true);
@@ -43,9 +46,17 @@ export function useRaceData(meetingKey) {
         const transformed = transformBundle(bundle);
         setData(transformed);
       })
-      .catch(err => setError(err.message))
+      .catch(err => {
+        console.error('[OpenF1] fetch failed:', err);
+        setError(err.message);
+      })
       .finally(() => setLoading(false));
+  }, [meetingKey, retryCount]);
+
+  const retry = useCallback(() => {
+    if (meetingKey) clearCache(meetingKey);
+    setRetryCount(c => c + 1);
   }, [meetingKey]);
 
-  return { data, loading, error };
+  return { data, loading, error, retry };
 }
