@@ -175,12 +175,13 @@ export default function BumpChart({ positionsByLap, drivers, currentLap, totalLa
               <motion.text
                 key={driver.id}
                 x={SVG_W - PAD_RIGHT + 6}
-                y={y + 4}
                 fill={driver.color}
                 fontSize={numDrivers > 12 ? 9 : 11}
                 fontFamily="Orbitron, monospace"
                 fontWeight="bold"
-                animate={{ y: y + 4 }}
+                initial={{ y: y + 4, opacity: 0 }}
+                animate={{ y: y + 4, opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ type: 'spring', stiffness: 120, damping: 20 }}
               >
                 {driver.id}
