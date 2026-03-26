@@ -51,6 +51,56 @@ body {
   min-height: 100vh;
 }
 
+/* Layout classes */
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+}
+
+.header-root {
+  padding: 0 32px;
+  min-height: 64px;
+}
+
+.header-tabs-wrapper {
+  order: 2;
+}
+
+.header-toggle {
+  order: 3;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .main-content {
+    padding: 16px 16px 32px;
+  }
+
+  .header-root {
+    padding: 10px 16px !important;
+    min-height: auto !important;
+    height: auto !important;
+    gap: 10px !important;
+  }
+
+  .header-tabs-wrapper {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4px;
+  }
+
+  .header-toggle {
+    order: 2;
+  }
+
+  .race-title {
+    font-size: 18px !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;

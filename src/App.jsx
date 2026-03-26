@@ -58,7 +58,7 @@ export default function App() {
         theme={theme}
         onThemeToggle={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
       />
-      <main style={{ maxWidth: '1400px', margin: '0 auto', padding: '24px 32px 48px' }}>
+      <main className="main-content">
         <RaceVisualizer
           race={race}
           positionsByLap={positionsByLap}

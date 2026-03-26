@@ -21,7 +21,7 @@ export default function RaceVisualizer({
     >
       {/* Race title */}
       <div style={{ marginBottom: '20px' }}>
-        <h1 className="orbitron" style={{
+        <h1 className="orbitron race-title" style={{
           fontSize: '24px',
           fontWeight: 900,
           letterSpacing: '1px',
