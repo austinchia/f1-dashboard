@@ -1,10 +1,6 @@
 import { motion } from 'framer-motion';
-import { RACES } from '../data/raceData';
-import LiveRaceSelector from './LiveRaceSelector';
 
-export default function Header({ mode, onModeChange, selectedRace, onRaceChange, selectedMeeting, onMeetingChange }) {
-  const isLive = mode === 'live';
-
+export default function Header({ races, selectedRace, onRaceChange, theme, onThemeToggle }) {
   return (
     <motion.header
       initial={{ y: -60, opacity: 0 }}
@@ -14,9 +10,9 @@ export default function Header({ mode, onModeChange, selectedRace, onRaceChange,
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        background: 'rgba(5, 5, 8, 0.88)',
+        background: 'var(--header-bg)',
         backdropFilter: 'blur(20px)',
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        borderBottom: '1px solid var(--border)',
         padding: '0 32px',
         height: '64px',
         display: 'flex',
@@ -35,115 +31,88 @@ export default function Header({ mode, onModeChange, selectedRace, onRaceChange,
           boxShadow: '0 0 12px rgba(232,0,45,0.6)',
         }} />
         <div>
-          <div className="orbitron" style={{ fontSize: '11px', color: 'rgba(238,238,255,0.4)', letterSpacing: '3px', marginBottom: '1px' }}>
+          <div className="orbitron" style={{ fontSize: '11px', color: 'var(--text-muted)', letterSpacing: '3px', marginBottom: '1px' }}>
             FORMULA 1
           </div>
-          <div className="orbitron" style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '1px' }}>
-            Race Pace Analyzer
+          <div className="orbitron" style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '1px', color: 'var(--text-primary)' }}>
+            Race Positions
           </div>
         </div>
       </div>
 
-      {/* Right side controls */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      {/* Right controls */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
 
-        {/* Mode toggle */}
+        {/* Race tabs */}
         <div style={{
           display: 'flex',
-          background: 'rgba(255,255,255,0.04)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          background: 'rgba(128,128,128,0.08)',
+          border: '1px solid var(--border)',
           borderRadius: '10px',
           padding: '3px',
           gap: '2px',
         }}>
-          {[
-            { id: 'mock', label: 'Demo' },
-            { id: 'live', label: '2026 Live' },
-          ].map(opt => (
-            <button
-              key={opt.id}
-              onClick={() => onModeChange(opt.id)}
-              style={{
-                padding: '5px 14px',
-                borderRadius: '7px',
-                border: 'none',
-                cursor: 'pointer',
-                fontSize: '12px',
-                fontWeight: 600,
-                fontFamily: 'Inter, sans-serif',
-                transition: 'all 0.2s',
-                background: mode === opt.id
-                  ? opt.id === 'live' ? 'rgba(232,0,45,0.15)' : 'rgba(255,255,255,0.08)'
-                  : 'transparent',
-                color: mode === opt.id
-                  ? opt.id === 'live' ? '#e8002d' : 'var(--text-primary)'
-                  : 'rgba(238,238,255,0.35)',
-                position: 'relative',
-              }}
-            >
-              {opt.id === 'live' && (
-                <span style={{
-                  display: 'inline-block',
-                  width: '6px',
-                  height: '6px',
-                  borderRadius: '50%',
-                  background: '#e8002d',
-                  marginRight: '6px',
-                  verticalAlign: 'middle',
-                  boxShadow: mode === 'live' ? '0 0 6px #e8002d' : 'none',
-                  opacity: mode === 'live' ? 1 : 0.4,
-                  transition: 'all 0.2s',
-                }} />
-              )}
-              {opt.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Race selector — demo mode */}
-        {!isLive && (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '12px', color: 'rgba(238,238,255,0.35)', letterSpacing: '1px', textTransform: 'uppercase' }}>
-              Race
-            </span>
-            <div style={{ position: 'relative' }}>
-              <select
-                value={selectedRace}
-                onChange={e => onRaceChange(e.target.value)}
+          {races.map(race => {
+            const active = race.id === selectedRace;
+            return (
+              <button
+                key={race.id}
+                onClick={() => onRaceChange(race.id)}
                 style={{
-                  background: 'rgba(255,255,255,0.05)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  color: 'var(--text-primary)',
-                  padding: '8px 36px 8px 14px',
-                  borderRadius: '8px',
-                  fontSize: '13px',
-                  fontFamily: 'Inter, sans-serif',
-                  fontWeight: 500,
+                  padding: '5px 14px',
+                  borderRadius: '7px',
+                  border: 'none',
                   cursor: 'pointer',
-                  outline: 'none',
-                  appearance: 'none',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  fontFamily: 'Inter, sans-serif',
+                  transition: 'all 0.2s',
+                  background: active ? 'rgba(232,0,45,0.15)' : 'transparent',
+                  color: active ? '#e8002d' : 'var(--text-muted)',
                 }}
               >
-                {RACES.map(r => (
-                  <option key={r.id} value={r.id} style={{ background: '#0c0c18' }}>
-                    {r.label}
-                  </option>
-                ))}
-              </select>
-              <svg
-                style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
-                width="10" height="6" viewBox="0 0 10 6" fill="none"
-              >
-                <path d="M1 1L5 5L9 1" stroke="rgba(238,238,255,0.4)" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-            </div>
-          </div>
-        )}
+                {race.label.replace(' Grand Prix', '')}
+              </button>
+            );
+          })}
+        </div>
 
-        {/* Race selector — live mode */}
-        {isLive && (
-          <LiveRaceSelector selectedMeeting={selectedMeeting} onSelect={onMeetingChange} />
-        )}
+        {/* Theme toggle */}
+        <button
+          onClick={onThemeToggle}
+          aria-label="Toggle theme"
+          title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          style={{
+            width: '38px',
+            height: '22px',
+            borderRadius: '11px',
+            border: '1px solid var(--border)',
+            background: theme === 'dark' ? 'rgba(255,255,255,0.08)' : '#e8002d',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            padding: '2px',
+            transition: 'background 0.3s',
+            flexShrink: 0,
+          }}
+        >
+          <div style={{
+            width: '16px',
+            height: '16px',
+            borderRadius: '50%',
+            background: theme === 'dark' ? 'rgba(255,255,255,0.5)' : '#fff',
+            transform: theme === 'dark' ? 'translateX(0)' : 'translateX(16px)',
+            transition: 'transform 0.3s',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '9px',
+            lineHeight: 1,
+          }}>
+            {theme === 'dark' ? '🌙' : '☀️'}
+          </div>
+        </button>
+
       </div>
     </motion.header>
   );

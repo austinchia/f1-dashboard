@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bhr2024",
+    "label": "Bahrain Grand Prix",
+    "circuit": "Sakhir",
+    "date": "March 2, 2024",
+    "laps": 57
+  },
+  {
+    "id": "sau2024",
+    "label": "Saudi Arabian Grand Prix",
+    "circuit": "Jeddah",
+    "date": "March 9, 2024",
+    "laps": 50
+  },
+  {
+    "id": "aus2024",
+    "label": "Australian Grand Prix",
+    "circuit": "Melbourne",
+    "date": "March 24, 2024",
+    "laps": 58
+  }
+]
