@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function Header({ races, selectedRace, onRaceChange, theme, onThemeToggle }) {
+export default function Header({ races, selectedRace, onRaceChange, years, selectedYear, onYearChange, theme, onThemeToggle }) {
   return (
     <motion.header
       className="header-root"
@@ -40,36 +40,65 @@ export default function Header({ races, selectedRace, onRaceChange, theme, onThe
         </div>
       </div>
 
-      {/* Race tabs — order 2 desktop, order 3 mobile (CSS handles this) */}
-      <div className="header-tabs-wrapper">
-        <div style={{
-          display: 'flex',
-          background: 'rgba(128,128,128,0.08)',
-          border: '1px solid var(--border)',
-          borderRadius: '10px',
-          padding: '3px',
-          gap: '2px',
-        }}>
-          {races.map(race => {
-            const active = race.id === selectedRace;
+      {/* Race selector + Year picker — order 2 desktop, order 3 mobile (CSS handles this) */}
+      <div className="header-tabs-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Race dropdown */}
+        <div style={{ position: 'relative', display: 'inline-block' }}>
+          <select
+            value={selectedRace}
+            onChange={e => onRaceChange(e.target.value)}
+            style={{
+              appearance: 'none',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border)',
+              borderRadius: '8px',
+              color: 'var(--text-primary)',
+              padding: '7px 36px 7px 12px',
+              fontSize: '13px',
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: 600,
+              cursor: 'pointer',
+              outline: 'none',
+              minWidth: '160px',
+            }}
+          >
+            {races.map(race => (
+              <option key={race.id} value={race.id} style={{ background: '#191A1B', color: 'var(--text-primary)' }}>
+                {race.label}
+              </option>
+            ))}
+          </select>
+          <svg
+            style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
+            width="12" height="12" viewBox="0 0 12 12" fill="none"
+          >
+            <path d="M2 4L6 8L10 4" stroke="#e8002d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        {/* Year picker segmented control */}
+        <div style={{ display: 'flex', background: 'rgba(128,128,128,0.08)', border: '1px solid var(--border)', borderRadius: '8px', padding: '3px', gap: '2px' }}>
+          {years.map(year => {
+            const active = year === selectedYear;
             return (
               <button
-                key={race.id}
-                onClick={() => onRaceChange(race.id)}
+                key={year}
+                onClick={() => onYearChange(year)}
                 style={{
-                  padding: '5px 14px',
-                  borderRadius: '7px',
+                  padding: '5px 12px',
+                  borderRadius: '6px',
                   border: 'none',
                   cursor: 'pointer',
                   fontSize: '12px',
-                  fontWeight: 600,
-                  fontFamily: 'Inter, sans-serif',
+                  fontWeight: 700,
+                  fontFamily: 'Orbitron, monospace',
+                  letterSpacing: '0.5px',
                   transition: 'all 0.2s',
                   background: active ? 'rgba(232,0,45,0.15)' : 'transparent',
                   color: active ? '#e8002d' : 'var(--text-muted)',
                 }}
               >
-                {race.label.replace(' Grand Prix', '')}
+                {year}
               </button>
             );
           })}

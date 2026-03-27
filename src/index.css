@@ -8,16 +8,16 @@
 
 /* Dark theme (default) */
 :root {
-  --bg-primary: #050508;
-  --bg-card: rgba(255, 255, 255, 0.02);
-  --border: rgba(255, 255, 255, 0.06);
-  --text-primary: #eeeeff;
-  --text-muted: rgba(238, 238, 255, 0.35);
-  --text-dim: rgba(238, 238, 255, 0.2);
-  --grid-line: rgba(255, 255, 255, 0.04);
+  --bg-primary: #191A1B;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.10);
+  --text-primary: #f0f0ff;
+  --text-muted: rgba(238, 238, 255, 0.55);
+  --text-dim: rgba(238, 238, 255, 0.38);
+  --grid-line: rgba(255, 255, 255, 0.08);
   --accent-red: #e8002d;
-  --header-bg: rgba(5, 5, 8, 0.88);
-  --scrubber-track: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(25, 26, 27, 0.92);
+  --scrubber-track: rgba(255, 255, 255, 0.18);
 }
 
 /* Light theme */
@@ -53,9 +53,15 @@ body {
 
 /* Layout classes */
 .main-content {
+  flex: 1;
+  min-height: 0;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 24px 32px 48px;
+  padding: 24px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .header-root {
@@ -74,7 +80,8 @@ body {
 /* Mobile responsive */
 @media (max-width: 640px) {
   .main-content {
-    padding: 16px 16px 32px;
+    padding: 16px 16px 24px;
+    overflow: auto;
   }
 
   .header-root {

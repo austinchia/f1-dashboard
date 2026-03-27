@@ -1,8 +1,37 @@
 import races from './races.json';
-import bhr2024 from './bhr2024.json';
-import sau2024 from './sau2024.json';
-import aus2024 from './aus2024.json';
+import { RACE_CONFIGS, RACE_CONFIGS_2025 } from './raceConfigs.js';
 
 export const RACES = races;
 
-export const RACE_DATA = { bhr2024, sau2024, aus2024 };
+// Import all real lap-by-lap position files (one per race)
+const lapModules = import.meta.glob('./laps/*.json', { eager: true });
+
+function getLaps(raceId) {
+  const key = `./laps/${raceId}.json`;
+  const mod = lapModules[key];
+  return {
+    positionsByLap: mod?.positionsByLap ?? [],
+    dnfLaps: mod?.dnfLaps ?? {},
+  };
+}
+
+function buildRaceData(config) {
+  const { positionsByLap, dnfLaps } = getLaps(config.race.id);
+  return {
+    race: config.race,
+    drivers: config.drivers,
+    positionsByLap,
+    dnfLaps,
+  };
+}
+
+export const RACE_DATA = {};
+
+for (const config of RACE_CONFIGS) {
+  RACE_DATA[config.race.id] = buildRaceData(config);
+}
+
+for (const config of RACE_CONFIGS_2025) {
+  RACE_DATA[config.race.id] = buildRaceData(config);
+}
+

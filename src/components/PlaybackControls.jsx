@@ -2,8 +2,10 @@ export default function PlaybackControls({
   currentLap,
   totalLaps,
   isPlaying,
+  isFinished,
   onPlay,
   onPause,
+  onReplay,
   onScrub,
 }) {
   // Build tick labels: lap 1, every 10 laps, final lap
@@ -27,8 +29,8 @@ export default function PlaybackControls({
     }}>
       {/* Play / Pause */}
       <button
-        onClick={isPlaying ? onPause : onPlay}
-        aria-label={isPlaying ? 'Pause' : 'Play'}
+        onClick={isFinished ? onReplay : isPlaying ? onPause : onPlay}
+        aria-label={isFinished ? 'Replay' : isPlaying ? 'Pause' : 'Play'}
         style={{
           width: '38px',
           height: '38px',
@@ -44,7 +46,7 @@ export default function PlaybackControls({
           flexShrink: 0,
         }}
       >
-        {isPlaying ? '⏸' : '▶'}
+        {isFinished ? '↺' : isPlaying ? '⏸' : '▶'}
       </button>
 
       {/* Lap counter */}
@@ -58,7 +60,7 @@ export default function PlaybackControls({
           minWidth: '60px',
         }}
       >
-        LAP {currentLap}
+        LAP {Math.floor(currentLap)}
       </div>
 
       {/* Scrubber + ticks */}
@@ -67,6 +69,7 @@ export default function PlaybackControls({
           type="range"
           min={1}
           max={totalLaps}
+          step="any"
           value={currentLap}
           onChange={handleScrub}
         />
