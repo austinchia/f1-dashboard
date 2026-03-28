@@ -23,30 +23,28 @@ export default function HeroSection() {
       }}
     >
       <HeroNavbar />
-
-      {/* ── Aerodynamic streamlines flowing over the car ── */}
       <FloatingCarPaths />
 
-
-      {/* ── Text block — upper center ── */}
+      {/* ── TEXT ZONE ── */}
       <div style={{
-        position: 'relative',
-        zIndex: 4,
+        flex: '0 0 auto',
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        paddingTop: '112px',
+        paddingTop: '64px', /* navbar height */
         paddingLeft: '24px',
         paddingRight: '24px',
-        flexShrink: 0,
+        position: 'relative',
+        zIndex: 4,
       }}>
         {/* Eyebrow */}
         <div style={{
           display: 'flex',
           alignItems: 'center',
           gap: '10px',
-          marginBottom: '18px',
+          marginBottom: '16px',
           opacity: 0,
           animation: 'hero-fade-up 0.6s ease-out 0.05s forwards',
         }}>
@@ -61,12 +59,12 @@ export default function HeroSection() {
         <h1
           className="orbitron"
           style={{
-            fontSize: 'clamp(32px, 6vw, 72px)',
+            fontSize: 'clamp(28px, 5vw, 64px)',
             fontWeight: 900,
             lineHeight: 1.08,
             textTransform: 'uppercase',
             color: '#f0f0ff',
-            margin: '0 0 14px',
+            margin: '0 0 12px',
             opacity: 0,
             animation: 'hero-fade-up 0.7s ease-out 0.15s forwards',
           }}
@@ -80,12 +78,12 @@ export default function HeroSection() {
         {/* Tagline */}
         <p style={{
           fontFamily: 'Inter, system-ui, sans-serif',
-          fontSize: 'clamp(13px, 1.5vw, 16px)',
+          fontSize: 'clamp(12px, 1.4vw, 15px)',
           fontWeight: 400,
           lineHeight: 1.6,
           color: 'rgba(240,240,255,0.5)',
-          margin: '0 0 28px',
-          maxWidth: '420px',
+          margin: '0 0 24px',
+          maxWidth: '400px',
           opacity: 0,
           animation: 'hero-fade-up 0.7s ease-out 0.28s forwards',
         }}>
@@ -107,7 +105,7 @@ export default function HeroSection() {
               color: '#fff',
               textDecoration: 'none',
               background: '#e8002d',
-              padding: '12px 28px',
+              padding: '11px 26px',
               borderRadius: '8px',
               boxShadow: '0 0 24px rgba(232,0,45,0.35)',
               transition: 'background 0.2s, box-shadow 0.2s, transform 0.15s',
@@ -131,28 +129,27 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ── F1 Car — lower portion, wide, on top of everything ── */}
-      <div className="hero-car" style={{
+      {/* ── F1 Car — centering wrapper separate from motion to avoid transform conflicts ── */}
+      <div style={{
         position: 'absolute',
+        top: '42%',
         left: '50%',
         transform: 'translateX(-50%)',
-        width: 'min(92%, 1100px)',
+        width: 'min(88%, 860px)',
         zIndex: 3,
       }}>
-        {/* Entrance: fade + slide up */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           style={{ filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))' }}
         >
-          {/* Continuous bounce */}
           <motion.img
             src={f1CarPng}
             alt="F1 race car"
             style={{ width: '100%', height: 'auto', display: 'block' }}
             animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+            transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5, repeatDelay: 2.5 }}
           />
         </motion.div>
       </div>
@@ -163,10 +160,6 @@ export default function HeroSection() {
         @keyframes hero-fade-up {
           from { opacity: 0; transform: translateY(18px); }
           to   { opacity: 1; transform: translateY(0); }
-        }
-.hero-car { bottom: 3%; }
-        @media (max-width: 767px) {
-          .hero-car { bottom: 12%; }
         }
       `}</style>
     </section>

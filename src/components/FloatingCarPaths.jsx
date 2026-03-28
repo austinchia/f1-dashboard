@@ -24,11 +24,11 @@ const CAR_SVG_PROFILE = [
 // Map car SVG profile to real screen pixels.
 // Must match the CSS positioning of the car div in HeroSection.
 function toScreenProfile(vw, vh) {
-  const carW = Math.min(vw * 0.92, 1100);
+  // Car: top anchored at 42%vh, width min(88vw, 860px) — matches HeroSection.
+  const carW = Math.min(vw * 0.88, 860);
   const carH = carW * 0.28; // aspect ratio of f1-car.svg: 280/1000
   const carLeft = (vw - carW) / 2;
-  // bottom: 12% on mobile (<768px), 3% on desktop — matches HeroSection CSS
-  const carBottomY = vw < 768 ? vh * 0.88 : vh * 0.97;
+  const carBottomY = vh * 0.42 + carH;
   const carTopY = carBottomY - carH;
   return CAR_SVG_PROFILE.map(([x, y]) => [
     carLeft + (x / 1000) * carW,
