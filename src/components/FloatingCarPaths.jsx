@@ -73,11 +73,13 @@ function buildPaths(vw, vh, profile) {
     const clearance = 8 + (1 - t) * 130;      // inner = 8px above surface, outer = 138px
     const entryY = Math.max(vh * 0.04, peakY - clearance);
 
-    // Sample at viewport margins + every car profile x-coordinate
+    // Off-screen margins must exceed dash length (pathLength=0.12 × total span).
+    // With ±25% margins: span=1.5×vw, dash=0.18×vw, so at pathOffset=0 the
+    // dash sits at [-0.25vw, -0.07vw] — fully off-screen left. ✓
     const xs = [
-      -vw * 0.06, 0,
+      -vw * 0.25, 0,
       ...profile.map(([x]) => x),
-      vw, vw * 1.06,
+      vw, vw * 1.25,
     ].sort((a, b) => a - b);
 
     const pts = xs.map(x => {
