@@ -41,8 +41,14 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
 
   const numDrivers = drivers.length;
 
-  // Interpolate between floor and ceil laps for smooth animation
-  const floorLap = Math.floor(currentLap);
+  // Interpolate between floor and ceil laps for smooth animation.
+  // Cap floorLap to the last lap that has actual data — if currentLap is set
+  // to exactly race.laps at animation end and that lap isn't in positionsByLap,
+  // all interpolatedPositions would be undefined and labels would exit/disappear.
+  const maxDataLap = positionsByLap.length > 0
+    ? positionsByLap[positionsByLap.length - 1].lap
+    : totalLaps;
+  const floorLap = Math.min(Math.floor(currentLap), maxDataLap);
   const ceilLap = Math.min(floorLap + 1, totalLaps);
   const frac = currentLap - floorLap;
 

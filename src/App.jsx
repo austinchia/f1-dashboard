@@ -12,10 +12,11 @@ export default function App() {
 
   const [selectedRace, setSelectedRace] = useState(racesForYear[0].id);
   const [currentLap, setCurrentLap] = useState(1);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [theme, setTheme] = useState('dark');
   const rafRef = useRef(null);
   const lastTimeRef = useRef(null);
+  const dashboardRef = useRef(null);
   const LAPS_PER_SEC = 1.5;
 
   const raceMetadata = RACES.find(r => r.id === selectedRace);
@@ -31,6 +32,23 @@ export default function App() {
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
+
+  // Start animation only when dashboard scrolls into view (fires once)
+  useEffect(() => {
+    const el = dashboardRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsPlaying(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   // Smooth RAF-based playback
   useEffect(() => {
@@ -81,6 +99,7 @@ export default function App() {
       <HeroSection />
       <section
         id="dashboard"
+        ref={dashboardRef}
         style={{ height: '100svh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-primary)', transition: 'background 0.3s' }}
       >
         <Header
