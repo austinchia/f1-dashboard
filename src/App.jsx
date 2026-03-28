@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import RaceVisualizer from './components/RaceVisualizer';
+import HeroSection from './components/HeroSection';
 import { RACES, RACE_DATA } from './data/index.js';
 
 const YEARS = [2024, 2025];
@@ -76,32 +77,38 @@ export default function App() {
   }
 
   return (
-    <div style={{ height: '100svh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-primary)', transition: 'background 0.3s' }}>
-      <Header
-        races={racesForYear}
-        selectedRace={selectedRace}
-        onRaceChange={handleRaceChange}
-        years={YEARS}
-        selectedYear={selectedYear}
-        onYearChange={handleYearChange}
-        theme={theme}
-        onThemeToggle={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
-      />
-      <main className="main-content">
-        <RaceVisualizer
-          race={race}
-          positionsByLap={positionsByLap}
-          drivers={drivers}
-          dnfLaps={dnfLaps}
-          currentLap={currentLap}
-          isPlaying={isPlaying}
-          isFinished={currentLap >= race.laps && !isPlaying}
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
-          onReplay={() => { setCurrentLap(1); setIsPlaying(true); }}
-          onScrub={handleScrub}
+    <>
+      <HeroSection />
+      <section
+        id="dashboard"
+        style={{ height: '100svh', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-primary)', transition: 'background 0.3s' }}
+      >
+        <Header
+          races={racesForYear}
+          selectedRace={selectedRace}
+          onRaceChange={handleRaceChange}
+          years={YEARS}
+          selectedYear={selectedYear}
+          onYearChange={handleYearChange}
+          theme={theme}
+          onThemeToggle={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
         />
-      </main>
-    </div>
+        <main className="main-content">
+          <RaceVisualizer
+            race={race}
+            positionsByLap={positionsByLap}
+            drivers={drivers}
+            dnfLaps={dnfLaps}
+            currentLap={currentLap}
+            isPlaying={isPlaying}
+            isFinished={currentLap >= race.laps && !isPlaying}
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
+            onReplay={() => { setCurrentLap(1); setIsPlaying(true); }}
+            onScrub={handleScrub}
+          />
+        </main>
+      </section>
+    </>
   );
 }
