@@ -1,5 +1,6 @@
 import HeroNavbar from './HeroNavbar';
 import ScrollPrompt from './ScrollPrompt';
+import FloatingCarPaths from './FloatingCarPaths';
 import f1CarPng from '../assets/f1-car.png';
 
 export default function HeroSection() {
@@ -22,31 +23,9 @@ export default function HeroSection() {
     >
       <HeroNavbar />
 
-      {/* ── Diagonal slash band 1 (wide red, from upper-right) ── */}
-      <div style={{
-        position: 'absolute',
-        top: '-20%',
-        right: '-15%',
-        width: '75%',
-        height: '200%',
-        background: '#e8002d',
-        transform: 'rotate(35deg)',
-        transformOrigin: 'top right',
-        zIndex: 1,
-      }} />
+      {/* ── Aerodynamic streamlines flowing over the car ── */}
+      <FloatingCarPaths />
 
-      {/* ── Diagonal slash band 2 (dark gap, creates two-stripe look) ── */}
-      <div style={{
-        position: 'absolute',
-        top: '-20%',
-        right: '-15%',
-        width: '58%',
-        height: '200%',
-        background: '#191A1B',
-        transform: 'rotate(35deg)',
-        transformOrigin: 'top right',
-        zIndex: 2,
-      }} />
 
       {/* ── Text block — upper center ── */}
       <div style={{
@@ -152,9 +131,8 @@ export default function HeroSection() {
       </div>
 
       {/* ── F1 Car — lower portion, wide, on top of everything ── */}
-      <div style={{
+      <div className="hero-car" style={{
         position: 'absolute',
-        bottom: '-2%',
         left: '50%',
         transform: 'translateX(-50%)',
         width: 'min(92%, 1100px)',
@@ -180,6 +158,10 @@ export default function HeroSection() {
         @keyframes hero-car-in {
           from { opacity: 0; transform: translateX(-50%) translateY(24px); }
           to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        .hero-car { bottom: -2%; }
+        @media (max-width: 767px) {
+          .hero-car { bottom: 5%; }
         }
       `}</style>
     </section>

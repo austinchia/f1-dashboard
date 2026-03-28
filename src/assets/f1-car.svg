@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" fill="none">
+  <!-- Shadow -->
+  <ellipse cx="500" cy="245" rx="380" ry="18" fill="rgba(0,0,0,0.5)"/>
+
+  <!-- Rear wing endplates -->
+  <rect x="848" y="80" width="8" height="70" rx="2" fill="#1a1a1a"/>
+  <rect x="868" y="80" width="8" height="70" rx="2" fill="#1a1a1a"/>
+  <!-- Rear wing main plane -->
+  <path d="M840 88 L890 82 L895 88 L890 96 L840 100 Z" fill="#111"/>
+  <path d="M840 100 L890 96 L895 103 L890 110 L840 114 Z" fill="#222"/>
+  <!-- Rear wing support -->
+  <rect x="852" y="114" width="20" height="30" rx="1" fill="#181818"/>
+
+  <!-- Main body -->
+  <path d="M150 160 L185 108 L260 90 L380 78 L520 72 L660 74 L780 80 L840 100 L855 125 L840 145 L760 155 L600 160 Z" fill="#181818"/>
+
+  <!-- Body lower detail -->
+  <path d="M300 160 L310 175 L700 175 L720 160 Z" fill="#141414"/>
+
+  <!-- Sidepod left shape -->
+  <path d="M340 152 L340 178 L590 178 L610 158 L610 152 Z" fill="#141414"/>
+  <path d="M340 178 L355 192 L575 192 L590 178 Z" fill="#111"/>
+
+  <!-- Sidepod intake -->
+  <path d="M345 118 L380 108 L380 148 L345 148 Z" fill="#0d0d0d"/>
+  <path d="M350 122 L375 114 L375 144 L350 144 Z" fill="#080808"/>
+
+  <!-- Engine cover/airbox -->
+  <path d="M490 72 L530 50 L590 46 L650 52 L680 72 Z" fill="#161616"/>
+  <path d="M500 74 L532 54 L588 50 L646 56 L675 74 Z" fill="#0a0a0a"/>
+  <!-- Airbox opening -->
+  <ellipse cx="590" cy="54" rx="50" ry="14" fill="#050505"/>
+
+  <!-- Halo -->
+  <path d="M500 66 Q540 38 590 34 Q640 34 680 66" stroke="#252525" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M500 66 Q540 38 590 34 Q640 34 680 66" stroke="#1a1a1a" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Engine cover details -->
+  <path d="M650 78 L730 84 L755 105 L740 128 L660 130 L625 110 Z" fill="#151515"/>
+  <!-- Engine cover lines -->
+  <line x1="660" y1="85" x2="700" y2="130" stroke="#252525" stroke-width="1.5"/>
+  <line x1="680" y1="84" x2="720" y2="130" stroke="#252525" stroke-width="1.5"/>
+
+  <!-- Nose cone -->
+  <path d="M150 160 L100 155 L60 148 L30 140 L18 135 L22 128 L50 124 L100 130 L150 138 Z" fill="#161616"/>
+  <path d="M22 128 L18 135 L22 142 L30 140 Z" fill="#0d0d0d"/>
+
+  <!-- Front wing main elements -->
+  <path d="M22 130 L75 124 L80 138 L75 145 L22 140 Z" fill="#141414"/>
+  <!-- Front wing cascade -->
+  <path d="M10 125 L25 122 L25 130 L10 128 Z" fill="#1a1a1a"/>
+  <path d="M10 128 L25 130 L25 138 L10 136 Z" fill="#191919"/>
+  <path d="M10 136 L25 138 L25 144 L10 142 Z" fill="#181818"/>
+  <!-- Front wing endplate -->
+  <rect x="16" y="122" width="6" height="30" rx="1" fill="#151515"/>
+
+  <!-- Body red accents -->
+  <path d="M200 100 L380 82 L380 90 L200 108 Z" fill="#E8001D" opacity="0.7"/>
+  <path d="M420 78 L510 74 L510 80 L420 84 Z" fill="#E8001D" opacity="0.5"/>
+
+  <!-- Front suspension arms -->
+  <line x1="155" y1="148" x2="225" y2="175" stroke="#282828" stroke-width="5" stroke-linecap="round"/>
+  <line x1="180" y1="138" x2="235" y2="168" stroke="#282828" stroke-width="4" stroke-linecap="round"/>
+  <line x1="155" y1="138" x2="215" y2="158" stroke="#282828" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Rear suspension -->
+  <line x1="750" y1="148" x2="700" y2="185" stroke="#282828" stroke-width="5" stroke-linecap="round"/>
+  <line x1="770" y1="140" x2="720" y2="178" stroke="#282828" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- FRONT WHEEL -->
+  <circle cx="228" cy="192" r="50" fill="#0f0f0f"/>
+  <circle cx="228" cy="192" r="44" fill="#141414"/>
+  <!-- Tire shoulder -->
+  <circle cx="228" cy="192" r="50" fill="none" stroke="#1a1a1a" stroke-width="6"/>
+  <!-- Red Pirelli stripe -->
+  <path d="M195 150 Q228 142 261 150" stroke="#E8001D" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M195 234 Q228 242 261 234" stroke="#E8001D" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Rim -->
+  <circle cx="228" cy="192" r="28" fill="#111"/>
+  <circle cx="228" cy="192" r="22" fill="#0d0d0d"/>
+  <!-- Rim spokes -->
+  {[0,60,120,180,240,300].map((a,i) => (
+    `<line key=${i} x1="${228 + 10*Math.cos(a*Math.PI/180)}" y1="${192 + 10*Math.sin(a*Math.PI/180)}" x2="${228 + 24*Math.cos(a*Math.PI/180)}" y2="${192 + 24*Math.sin(a*Math.PI/180)}" stroke="#222" stroke-width="4"/>`
+  ))}
+  <line x1="228" y1="182" x2="228" y2="168" stroke="#222" stroke-width="4"/>
+  <line x1="238" y1="185" x2="249" y2="175" stroke="#222" stroke-width="4"/>
+  <line x1="238" y1="199" x2="249" y2="209" stroke="#222" stroke-width="4"/>
+  <line x1="228" y1="202" x2="228" y2="216" stroke="#222" stroke-width="4"/>
+  <line x1="218" y1="199" x2="207" y2="209" stroke="#222" stroke-width="4"/>
+  <line x1="218" y1="185" x2="207" y2="175" stroke="#222" stroke-width="4"/>
+  <circle cx="228" cy="192" r="8" fill="#1a1a1a"/>
+
+  <!-- REAR WHEEL -->
+  <circle cx="718" cy="196" r="56" fill="#0f0f0f"/>
+  <circle cx="718" cy="196" r="50" fill="#141414"/>
+  <circle cx="718" cy="196" r="56" fill="none" stroke="#1a1a1a" stroke-width="6"/>
+  <!-- Red Pirelli stripe -->
+  <path d="M681 148 Q718 140 755 148" stroke="#E8001D" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M681 244 Q718 252 755 244" stroke="#E8001D" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Rim -->
+  <circle cx="718" cy="196" r="32" fill="#111"/>
+  <circle cx="718" cy="196" r="25" fill="#0d0d0d"/>
+  <line x1="718" y1="184" x2="718" y2="171" stroke="#222" stroke-width="5"/>
+  <line x1="730" y1="187" x2="742" y2="176" stroke="#222" stroke-width="5"/>
+  <line x1="730" y1="205" x2="742" y2="216" stroke="#222" stroke-width="5"/>
+  <line x1="718" y1="208" x2="718" y2="221" stroke="#222" stroke-width="5"/>
+  <line x1="706" y1="205" x2="694" y2="216" stroke="#222" stroke-width="5"/>
+  <line x1="706" y1="187" x2="694" y2="176" stroke="#222" stroke-width="5"/>
+  <circle cx="718" cy="196" r="10" fill="#1a1a1a"/>
+
+  <!-- Bargeboards/turning vanes -->
+  <path d="M310 155 L330 148 L330 160 L310 165 Z" fill="#161616"/>
+  <path d="M315 162 L335 156 L335 167 L315 170 Z" fill="#151515"/>
+</svg>
