@@ -1,17 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState, useEffect, useMemo } from 'react';
-
-function useViewportSize() {
-  const snap = () => ({ w: window.innerWidth, h: window.innerHeight });
-  const [size, setSize] = useState(snap);
-  useEffect(() => {
-    let t;
-    const onResize = () => { clearTimeout(t); t = setTimeout(() => setSize(snap()), 120); };
-    window.addEventListener('resize', onResize);
-    return () => { window.removeEventListener('resize', onResize); clearTimeout(t); };
-  }, []);
-  return size;
-}
+import { useMemo } from 'react';
 
 // Top surface of f1-car.svg in its native coordinate space (viewBox 0 0 1000 280)
 const CAR_SVG_PROFILE = [
@@ -21,18 +9,12 @@ const CAR_SVG_PROFILE = [
   [ 890,  82], [1000, 130],
 ];
 
-// Map car SVG profile to real screen pixels.
-// Must match the CSS positioning of the car div in HeroSection.
-function toScreenProfile(vw, vh) {
-  // Car: top anchored at 42%vh, width min(88vw, 860px) — matches HeroSection.
-  const carW = Math.min(vw * 0.88, 860);
-  const carH = carW * 0.28; // aspect ratio of f1-car.svg: 280/1000
-  const carLeft = (vw - carW) / 2;
-  const carBottomY = vh * 0.42 + carH;
-  const carTopY = carBottomY - carH;
+// Map SVG profile points to real screen pixels using measured car rect
+function toScreenProfile(carRect) {
+  const { left, top, width, height } = carRect;
   return CAR_SVG_PROFILE.map(([x, y]) => [
-    carLeft + (x / 1000) * carW,
-    carTopY + (y / 280)  * carH,
+    left + (x / 1000) * width,
+    top  + (y / 280)  * height,
   ]);
 }
 
@@ -66,53 +48,53 @@ function catmullRom(pts, tension = 0.38) {
 const LINE_COUNT = 22;
 
 function buildPaths(vw, vh, profile) {
-  const peakY = Math.min(...profile.map(([, y]) => y)); // highest point on car (smallest y)
+  // Car vertical bounds from profile
+  const profileYs = profile.map(([, y]) => y);
+  const carTop = Math.min(...profileYs);
+  const carBottom = Math.max(...profileYs);
+  const carMid = (carTop + carBottom) / 2;
+  const carSpan = carBottom - carTop;
 
   return Array.from({ length: LINE_COUNT }, (_, i) => {
-    const t = i / (LINE_COUNT - 1);           // 0 = outermost, 1 = innermost
-    const clearance = 8 + (1 - t) * 130;      // inner = 8px above surface, outer = 138px
-    const entryY = Math.max(vh * 0.04, peakY - clearance);
+    const t = i / (LINE_COUNT - 1); // 0 = outermost, 1 = innermost
 
-    // Off-screen margins must exceed dash length (pathLength=0.12 × total span).
-    // With ±25% margins: span=1.5×vw, dash=0.18×vw, so at pathOffset=0 the
-    // dash sits at [-0.25vw, -0.07vw] — fully off-screen left. ✓
-    const xs = [
-      -vw * 0.25, 0,
-      ...profile.map(([x]) => x),
-      vw, vw * 1.25,
-    ].sort((a, b) => a - b);
+    // Spread lines across a band centred on the car's mid-height.
+    // Outer lines sit further above/below; inner lines hug the centre.
+    const spread = carSpan * 0.6 + 40; // total vertical spread of all lines
+    const lineY = carMid - spread / 2 + t * spread;
 
-    const pts = xs.map(x => {
-      if (x <= 0 || x >= vw) return [x, entryY];
-      const followY = lerpY(x, profile) - clearance;
-      // Only deflect upward: if car surface rises above ambient, push line up
-      return [x, Math.min(entryY, followY)];
-    });
+    const xs = [-vw * 0.25, vw * 1.25];
+    const pts = xs.map(x => [x, lineY]);
 
     return {
       id: i,
       d: catmullRom(pts),
-      strokeWidth: 0.4 + t * 0.85,
-      opacity: 0.05 + t * 0.38,
-      duration: 3.0 + (1 - t) * 2.8,
-      delay: i * 0.2,
+      strokeWidth: 0.4 + t * 0.7,
+      opacity: 0.04 + t * 0.32,
+      duration: 2.0 + (1 - t) * 1.5,
+      delay: i * 0.08,
     };
   });
 }
 
-export default function FloatingCarPaths() {
-  const { w, h } = useViewportSize();
+// carRect: { left, top, width, height } measured from the actual img DOM node
+export default function FloatingCarPaths({ carRect }) {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
 
   const paths = useMemo(() => {
-    const profile = toScreenProfile(w, h);
-    return buildPaths(w, h, profile);
-  }, [w, h]);
+    if (!carRect) return [];
+    const profile = toScreenProfile(carRect);
+    return buildPaths(vw, vh, profile);
+  }, [carRect, vw, vh]);
+
+  if (!paths.length) return null;
 
   return (
-    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 3 }}>
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 2, opacity: 'var(--hero-stream-opacity)' }}>
       <svg
         style={{ width: '100%', height: '100%' }}
-        viewBox={`0 0 ${w} ${h}`}
+        viewBox={`0 0 ${vw} ${vh}`}
         fill="none"
         preserveAspectRatio="none"
       >

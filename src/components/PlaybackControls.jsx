@@ -46,7 +46,24 @@ export default function PlaybackControls({
           flexShrink: 0,
         }}
       >
-        {isFinished ? '↺' : isPlaying ? '⏸' : '▶'}
+        {isFinished ? (
+          // Replay
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M2 8a6 6 0 1 0 1.2-3.6" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/>
+            <path d="M2 4.4V8h3.6" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        ) : isPlaying ? (
+          // Pause — two bars
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <rect x="4" y="3" width="3" height="10" rx="1" fill="#fff"/>
+            <rect x="9" y="3" width="3" height="10" rx="1" fill="#fff"/>
+          </svg>
+        ) : (
+          // Play — triangle
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5 3.5l8 4.5-8 4.5V3.5z" fill="#fff"/>
+          </svg>
+        )}
       </button>
 
       {/* Lap counter */}

@@ -63,7 +63,7 @@ export default function Header({ races, selectedRace, onRaceChange, years, selec
             }}
           >
             {races.map(race => (
-              <option key={race.id} value={race.id} style={{ background: '#191A1B', color: 'var(--text-primary)' }}>
+              <option key={race.id} value={race.id} style={{ background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
                 {race.label}
               </option>
             ))}

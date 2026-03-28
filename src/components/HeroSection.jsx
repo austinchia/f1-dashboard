@@ -1,10 +1,28 @@
 import { motion } from 'framer-motion';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import HeroNavbar from './HeroNavbar';
 import ScrollPrompt from './ScrollPrompt';
 import FloatingCarPaths from './FloatingCarPaths';
 import f1CarPng from '../assets/f1-car.png';
 
 export default function HeroSection() {
+  const imgRef = useRef(null);
+  const [carRect, setCarRect] = useState(null);
+
+  const measureCar = useCallback(() => {
+    const el = imgRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    setCarRect({ left: r.left, top: r.top, width: r.width, height: r.height });
+  }, []);
+
+  useEffect(() => {
+    const el = imgRef.current;
+    if (el?.complete) measureCar();
+    window.addEventListener('resize', measureCar);
+    return () => window.removeEventListener('resize', measureCar);
+  }, [measureCar]);
+
   function scrollToDashboard(e) {
     e.preventDefault();
     document.getElementById('dashboard')?.scrollIntoView({ behavior: 'smooth' });
@@ -16,24 +34,25 @@ export default function HeroSection() {
         position: 'relative',
         height: '100svh',
         minHeight: '580px',
-        background: '#191A1B',
+        background: 'var(--hero-bg)',
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
+        transition: 'background 0.3s',
       }}
     >
       <HeroNavbar />
-      <FloatingCarPaths />
+      <FloatingCarPaths carRect={carRect} />
 
       {/* ── TEXT ZONE ── */}
-      <div style={{
+      <div className="hero-text" style={{
         flex: '0 0 auto',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        paddingTop: '64px', /* navbar height */
+        paddingTop: '64px',
         paddingLeft: '24px',
         paddingRight: '24px',
         position: 'relative',
@@ -63,7 +82,7 @@ export default function HeroSection() {
             fontWeight: 900,
             lineHeight: 1.08,
             textTransform: 'uppercase',
-            color: '#f0f0ff',
+            color: 'var(--hero-heading)',
             margin: '0 0 12px',
             opacity: 0,
             animation: 'hero-fade-up 0.7s ease-out 0.15s forwards',
@@ -71,7 +90,7 @@ export default function HeroSection() {
         >
           Race Positions
           <br />
-          <span style={{ color: '#f0f0ff' }}>Like a </span>
+          <span style={{ color: 'var(--hero-heading)' }}>Like a </span>
           <span style={{ color: '#e8002d' }}>Pro.</span>
         </h1>
 
@@ -81,7 +100,7 @@ export default function HeroSection() {
           fontSize: 'clamp(12px, 1.4vw, 15px)',
           fontWeight: 400,
           lineHeight: 1.6,
-          color: 'rgba(240,240,255,0.5)',
+          color: 'var(--hero-tagline)',
           margin: '0 0 24px',
           maxWidth: '400px',
           opacity: 0,
@@ -129,10 +148,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ── F1 Car — centering wrapper separate from motion to avoid transform conflicts ── */}
-      <div style={{
+      {/* ── F1 Car ── */}
+      <div className="hero-car" style={{
         position: 'absolute',
-        top: '42%',
         left: '50%',
         transform: 'translateX(-50%)',
         width: 'min(88%, 860px)',
@@ -145,8 +163,10 @@ export default function HeroSection() {
           style={{ filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))' }}
         >
           <motion.img
+            ref={imgRef}
             src={f1CarPng}
             alt="F1 race car"
+            onLoad={measureCar}
             style={{ width: '100%', height: 'auto', display: 'block' }}
             animate={{ y: [0, -7, 0] }}
             transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5, repeatDelay: 2.5 }}
@@ -160,6 +180,12 @@ export default function HeroSection() {
         @keyframes hero-fade-up {
           from { opacity: 0; transform: translateY(18px); }
           to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero-car { top: 32%; }
+        .hero-text { margin-top: 0; }
+        @media (max-width: 767px) {
+          .hero-car { top: 52%; }
+          .hero-text { margin-top: 48px; }
         }
       `}</style>
     </section>

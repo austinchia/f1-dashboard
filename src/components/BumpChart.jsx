@@ -7,7 +7,7 @@ const PAD_RIGHT = 52;
 const PAD_TOP = 16;
 const PAD_BOTTOM = 28;
 
-const DNF_COLOR = 'rgba(255,255,255,0.18)';
+const DNF_COLOR = 'var(--dnf-color)';
 
 function lapToX(lap, totalLaps, chartW) {
   if (totalLaps <= 1) return PAD_LEFT;

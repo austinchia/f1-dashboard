@@ -40,7 +40,7 @@ export default function ScrollPrompt() {
           fontSize: '12px',
           letterSpacing: '0.15em',
           textTransform: 'uppercase',
-          color: 'rgba(240,240,255,0.45)',
+          color: 'var(--hero-scroll)',
         }}
       >
         Scroll
@@ -59,7 +59,7 @@ function ChevronDown() {
       fill="none"
       style={{
         animation: 'hero-bounce 1.6s ease-in-out infinite',
-        color: 'rgba(240,240,255,0.45)',
+        color: 'var(--hero-scroll)',
       }}
     >
       <path
