@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import HeroNavbar from './HeroNavbar';
 import ScrollPrompt from './ScrollPrompt';
 import FloatingCarPaths from './FloatingCarPaths';
@@ -51,7 +52,7 @@ export default function HeroSection() {
         }}>
           <div style={{ width: '24px', height: '2px', background: '#e8002d', boxShadow: '0 0 8px rgba(232,0,45,0.7)' }} />
           <span className="orbitron" style={{ fontSize: '10px', letterSpacing: '4px', color: '#e8002d' }}>
-            2024 – 2025 Season
+            FORMULA 1
           </span>
           <div style={{ width: '24px', height: '2px', background: '#e8002d', boxShadow: '0 0 8px rgba(232,0,45,0.7)' }} />
         </div>
@@ -137,15 +138,23 @@ export default function HeroSection() {
         transform: 'translateX(-50%)',
         width: 'min(92%, 1100px)',
         zIndex: 3,
-        opacity: 0,
-        animation: 'hero-car-in 1s ease-out 0.5s forwards',
-        filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))',
       }}>
-        <img
-          src={f1CarPng}
-          alt="F1 race car"
-          style={{ width: '100%', height: 'auto', display: 'block' }}
-        />
+        {/* Entrance: fade + slide up */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          style={{ filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))' }}
+        >
+          {/* Continuous bounce */}
+          <motion.img
+            src={f1CarPng}
+            alt="F1 race car"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
+            animate={{ y: [0, -7, 0] }}
+            transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+          />
+        </motion.div>
       </div>
 
       <ScrollPrompt />
@@ -155,13 +164,9 @@ export default function HeroSection() {
           from { opacity: 0; transform: translateY(18px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-        @keyframes hero-car-in {
-          from { opacity: 0; transform: translateX(-50%) translateY(24px); }
-          to   { opacity: 1; transform: translateX(-50%) translateY(0); }
-        }
-        .hero-car { bottom: -2%; }
+.hero-car { bottom: 3%; }
         @media (max-width: 767px) {
-          .hero-car { bottom: 5%; }
+          .hero-car { bottom: 12%; }
         }
       `}</style>
     </section>

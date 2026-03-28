@@ -11,8 +11,13 @@ export default function ScrollPrompt() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  function handleClick() {
+    document.getElementById('dashboard')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div
+      onClick={handleClick}
       style={{
         position: 'absolute',
         bottom: '32px',
@@ -24,7 +29,8 @@ export default function ScrollPrompt() {
         gap: '6px',
         opacity: visible ? 1 : 0,
         transition: 'opacity 0.4s ease',
-        pointerEvents: 'none',
+        cursor: 'pointer',
+        zIndex: 10,
       }}
     >
       <span

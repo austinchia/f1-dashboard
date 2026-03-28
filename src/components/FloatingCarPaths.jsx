@@ -27,8 +27,8 @@ function toScreenProfile(vw, vh) {
   const carW = Math.min(vw * 0.92, 1100);
   const carH = carW * 0.28; // aspect ratio of f1-car.svg: 280/1000
   const carLeft = (vw - carW) / 2;
-  // bottom: 5% on mobile (<768px), -2% on desktop — matches HeroSection CSS
-  const carBottomY = vw < 768 ? vh * 0.95 : vh * 1.02;
+  // bottom: 12% on mobile (<768px), 3% on desktop — matches HeroSection CSS
+  const carBottomY = vw < 768 ? vh * 0.88 : vh * 0.97;
   const carTopY = carBottomY - carH;
   return CAR_SVG_PROFILE.map(([x, y]) => [
     carLeft + (x / 1000) * carW,
