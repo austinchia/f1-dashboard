@@ -1,5 +1,5 @@
 import races from './races.json';
-import { RACE_CONFIGS, RACE_CONFIGS_2025 } from './raceConfigs.js';
+import { RACE_CONFIGS, RACE_CONFIGS_2025, RACE_CONFIGS_2026 } from './raceConfigs.js';
 
 export const RACES = races;
 
@@ -32,6 +32,10 @@ for (const config of RACE_CONFIGS) {
 }
 
 for (const config of RACE_CONFIGS_2025) {
+  RACE_DATA[config.race.id] = buildRaceData(config);
+}
+
+for (const config of RACE_CONFIGS_2026) {
   RACE_DATA[config.race.id] = buildRaceData(config);
 }
 

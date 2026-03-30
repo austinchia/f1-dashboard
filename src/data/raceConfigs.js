@@ -1297,3 +1297,64 @@ export const RACE_CONFIGS_2025 = [
     finish: ['VER', 'PIA', 'NOR', 'LEC', 'RUS', 'ALO', 'OCO', 'HAM', 'HUL', 'STR', 'BOR', 'BEA', 'SAI', 'TSU', 'ANT', 'ALB', 'HAD', 'LAW', 'GAS', 'COL'],
   }
 ];
+
+export const RACE_CONFIGS_2026 = [
+  {
+    race: { id: 'aus2026', label: 'Australia', circuit: 'Melbourne', date: 'March 8, 2026', laps: 58 },
+    drivers: [
+  { id: 'RUS', name: 'George Russell', team: 'Mercedes', color: '#00D7B6' },
+  { id: 'ANT', name: 'Kimi Antonelli', team: 'Mercedes', color: '#00D7B6' },
+  { id: 'LEC', name: 'Charles Leclerc', team: 'Ferrari', color: '#ED1131' },
+  { id: 'HAM', name: 'Lewis Hamilton', team: 'Ferrari', color: '#ED1131' },
+  { id: 'NOR', name: 'Lando Norris', team: 'McLaren', color: '#F47600' },
+  { id: 'VER', name: 'Max Verstappen', team: 'Red Bull Racing', color: '#4781D7' },
+  { id: 'BEA', name: 'Oliver Bearman', team: 'Haas F1 Team', color: '#9C9FA2' },
+  { id: 'LIN', name: 'Arvid Lindblad', team: 'Racing Bulls', color: '#6C98FF' },
+  { id: 'BOR', name: 'Gabriel Bortoleto', team: 'Audi', color: '#F50537' },
+  { id: 'GAS', name: 'Pierre Gasly', team: 'Alpine', color: '#00A1E8' },
+  { id: 'OCO', name: 'Esteban Ocon', team: 'Haas F1 Team', color: '#9C9FA2' },
+  { id: 'ALB', name: 'Alexander Albon', team: 'Williams', color: '#1868DB' },
+  { id: 'LAW', name: 'Liam Lawson', team: 'Racing Bulls', color: '#6C98FF' },
+  { id: 'COL', name: 'Franco Colapinto', team: 'Alpine', color: '#00A1E8' },
+  { id: 'SAI', name: 'Carlos Sainz', team: 'Williams', color: '#1868DB' },
+  { id: 'PER', name: 'Sergio Perez', team: 'Cadillac', color: '#909090' },
+  { id: 'STR', name: 'Lance Stroll', team: 'Aston Martin', color: '#229971' },
+  { id: 'ALO', name: 'Fernando Alonso', team: 'Aston Martin', color: '#229971' },
+  { id: 'BOT', name: 'Valtteri Bottas', team: 'Cadillac', color: '#909090' },
+  { id: 'HAD', name: 'Isack Hadjar', team: 'Red Bull Racing', color: '#4781D7' },
+  { id: 'PIA', name: 'Oscar Piastri', team: 'McLaren', color: '#F47600' },
+  { id: 'HUL', name: 'Nico Hulkenberg', team: 'Audi', color: '#F50537' }
+    ],
+    grid: ['RUS', 'ANT', 'HAD', 'LEC', 'PIA', 'NOR', 'HAM', 'LAW', 'LIN', 'BOR', 'HUL', 'BEA', 'OCO', 'GAS', 'ALB', 'COL', 'ALO', 'PER', 'BOT', 'VER', 'SAI', 'STR'],
+    finish: ['RUS', 'ANT', 'LEC', 'HAM', 'NOR', 'VER', 'BEA', 'LIN', 'BOR', 'GAS', 'OCO', 'ALB', 'LAW', 'COL', 'SAI', 'PER', 'STR', 'ALO', 'BOT', 'HAD', 'PIA', 'HUL'],
+  },
+  {
+    race: { id: 'chn2026', label: 'China', circuit: 'Shanghai', date: 'March 15, 2026', laps: 56 },
+    drivers: [
+  { id: 'ANT', name: 'Kimi Antonelli', team: 'Mercedes', color: '#00D7B6' },
+  { id: 'RUS', name: 'George Russell', team: 'Mercedes', color: '#00D7B6' },
+  { id: 'HAM', name: 'Lewis Hamilton', team: 'Ferrari', color: '#ED1131' },
+  { id: 'LEC', name: 'Charles Leclerc', team: 'Ferrari', color: '#ED1131' },
+  { id: 'BEA', name: 'Oliver Bearman', team: 'Haas F1 Team', color: '#9C9FA2' },
+  { id: 'GAS', name: 'Pierre Gasly', team: 'Alpine', color: '#00A1E8' },
+  { id: 'LAW', name: 'Liam Lawson', team: 'Racing Bulls', color: '#6C98FF' },
+  { id: 'HAD', name: 'Isack Hadjar', team: 'Red Bull Racing', color: '#4781D7' },
+  { id: 'SAI', name: 'Carlos Sainz', team: 'Williams', color: '#1868DB' },
+  { id: 'COL', name: 'Franco Colapinto', team: 'Alpine', color: '#00A1E8' },
+  { id: 'HUL', name: 'Nico Hulkenberg', team: 'Audi', color: '#F50537' },
+  { id: 'LIN', name: 'Arvid Lindblad', team: 'Racing Bulls', color: '#6C98FF' },
+  { id: 'BOT', name: 'Valtteri Bottas', team: 'Cadillac', color: '#909090' },
+  { id: 'OCO', name: 'Esteban Ocon', team: 'Haas F1 Team', color: '#9C9FA2' },
+  { id: 'PER', name: 'Sergio Perez', team: 'Cadillac', color: '#909090' },
+  { id: 'VER', name: 'Max Verstappen', team: 'Red Bull Racing', color: '#4781D7' },
+  { id: 'ALO', name: 'Fernando Alonso', team: 'Aston Martin', color: '#229971' },
+  { id: 'STR', name: 'Lance Stroll', team: 'Aston Martin', color: '#229971' },
+  { id: 'PIA', name: 'Oscar Piastri', team: 'McLaren', color: '#F47600' },
+  { id: 'NOR', name: 'Lando Norris', team: 'McLaren', color: '#F47600' },
+  { id: 'BOR', name: 'Gabriel Bortoleto', team: 'Audi', color: '#F50537' },
+  { id: 'ALB', name: 'Alexander Albon', team: 'Williams', color: '#1868DB' }
+    ],
+    grid: ['ANT', 'RUS', 'HAM', 'LEC', 'PIA', 'NOR', 'GAS', 'VER', 'HAD', 'BEA', 'HUL', 'COL', 'OCO', 'LAW', 'LIN', 'BOR', 'SAI', 'ALO', 'BOT', 'STR', 'PER', 'ALB'],
+    finish: ['ANT', 'RUS', 'HAM', 'LEC', 'BEA', 'GAS', 'LAW', 'HAD', 'SAI', 'COL', 'HUL', 'LIN', 'BOT', 'OCO', 'PER', 'VER', 'ALO', 'STR', 'PIA', 'NOR', 'BOR', 'ALB'],
+  }
+];

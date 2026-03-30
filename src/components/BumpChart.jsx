@@ -55,9 +55,39 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
   const floorEntry = positionsByLap.find(d => d.lap === floorLap);
   const ceilEntry = positionsByLap.find(d => d.lap === ceilLap);
 
-  // Interpolated (float) position per driver for smooth dot/label placement
+  // For each retired driver, capture the position they held at their DNF lap so
+  // we can freeze the line there instead of using the post-retirement classified
+  // fill (which can collide with active drivers at the same position).
+  const dnfFrozenPos = {};
+  for (const [driverId, dnfLap] of Object.entries(dnfLaps)) {
+    const dnfEntry = positionsByLap.find(d => d.lap === dnfLap);
+    const prevEntry = positionsByLap.find(d => d.lap === dnfLap - 1);
+    // Prefer the lap before DNF to avoid the jump that FastF1 sometimes
+    // applies (classified position written onto the final recorded lap).
+    dnfFrozenPos[driverId] =
+      prevEntry?.positions[driverId] ??
+      dnfEntry?.positions[driverId];
+  }
+
+  // Interpolated (float) position per driver for smooth dot/label placement.
+  // Retired drivers from their DNF lap onward are frozen at their pre-retirement
+  // position — EXCEPT on the final data lap, where the freeze is released so they
+  // sweep to their official classified position. This ensures DSQ drivers (whose
+  // classified position is pushed past the DNFs) always render below retired drivers.
   const interpolatedPositions = {};
   for (const driver of drivers) {
+    const dnfLap = dnfLaps[driver.id];
+    if (dnfLap != null && floorLap >= dnfLap && dnfFrozenPos[driver.id] != null) {
+      const frozen = dnfFrozenPos[driver.id];
+      if (ceilLap === maxDataLap) {
+        // Smoothly sweep toward the classified position as the animation hits the final lap
+        const p1 = ceilEntry?.positions[driver.id];
+        interpolatedPositions[driver.id] = p1 != null ? frozen + frac * (p1 - frozen) : frozen;
+      } else {
+        interpolatedPositions[driver.id] = frozen;
+      }
+      continue;
+    }
     const p0 = floorEntry?.positions[driver.id];
     const p1 = ceilEntry?.positions[driver.id];
     if (p0 != null && p1 != null) {
@@ -67,7 +97,10 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
     }
   }
 
-  // Build per-driver point arrays up to floorLap, then append interpolated tip
+  // Build per-driver point arrays up to floorLap, then append interpolated tip.
+  // For laps from dnfLap onward, substitute the frozen position so the dashed tail
+  // stays flat — but restore the actual classified position on the final data lap
+  // so the terminal point reflects the official result order.
   const visibleLaps = positionsByLap.filter(d => d.lap <= floorLap);
   const driverPoints = {};
   for (const driver of drivers) {
@@ -76,7 +109,12 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
   for (const lapEntry of visibleLaps) {
     for (const [abbr, pos] of Object.entries(lapEntry.positions)) {
       if (driverPoints[abbr] !== undefined) {
-        driverPoints[abbr].push({ lap: lapEntry.lap, pos });
+        const dnfLap = dnfLaps[abbr];
+        const isFrozenLap = dnfLap != null && lapEntry.lap >= dnfLap && dnfFrozenPos[abbr] != null;
+        const effectivePos = isFrozenLap && lapEntry.lap !== maxDataLap
+          ? dnfFrozenPos[abbr]
+          : pos;
+        driverPoints[abbr].push({ lap: lapEntry.lap, pos: effectivePos });
       }
     }
   }

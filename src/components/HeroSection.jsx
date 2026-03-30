@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import HeroNavbar from './HeroNavbar';
 import ScrollPrompt from './ScrollPrompt';
@@ -6,8 +6,15 @@ import FloatingCarPaths from './FloatingCarPaths';
 import f1CarPng from '../assets/f1-car.png';
 
 export default function HeroSection() {
+  const sectionRef = useRef(null);
   const imgRef = useRef(null);
   const [carRect, setCarRect] = useState(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  });
+  const carScrollX = useTransform(scrollYProgress, [0, 1], ['0vw', '-130vw']);
 
   const measureCar = useCallback(() => {
     const el = imgRef.current;
@@ -30,6 +37,7 @@ export default function HeroSection() {
 
   return (
     <section
+      ref={sectionRef}
       style={{
         position: 'relative',
         height: '100svh',
@@ -157,20 +165,24 @@ export default function HeroSection() {
         zIndex: 3,
       }}>
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          style={{ filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))' }}
+          initial={{ opacity: 0, x: '110vw' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <motion.img
-            ref={imgRef}
-            src={f1CarPng}
-            alt="F1 race car"
-            onLoad={measureCar}
-            style={{ width: '100%', height: 'auto', display: 'block' }}
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5, repeatDelay: 2.5 }}
-          />
+          <motion.div style={{
+            x: carScrollX,
+            filter: 'drop-shadow(0 -4px 40px rgba(232,0,45,0.18)) drop-shadow(0 20px 40px rgba(0,0,0,0.7))',
+          }}>
+            <motion.img
+              ref={imgRef}
+              src={f1CarPng}
+              alt="F1 race car"
+              onLoad={measureCar}
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+              animate={{ y: [0, -7, 0] }}
+              transition={{ duration: 2.6, repeat: Infinity, ease: 'easeInOut', delay: 1.5, repeatDelay: 2.5 }}
+            />
+          </motion.div>
         </motion.div>
       </div>
 

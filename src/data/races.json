@@ -46,5 +46,7 @@
   {"id": "bra2025", "label": "Brazil", "circuit": "São Paulo", "date": "November 9, 2025", "laps": 71, "year": 2025},
   {"id": "lvg2025", "label": "Las Vegas", "circuit": "Las Vegas", "date": "November 22, 2025", "laps": 50, "year": 2025},
   {"id": "qat2025", "label": "Qatar", "circuit": "Lusail", "date": "November 30, 2025", "laps": 57, "year": 2025},
-  {"id": "adh2025", "label": "Abu Dhabi", "circuit": "Yas Marina", "date": "December 7, 2025", "laps": 58, "year": 2025}
+  {"id": "adh2025", "label": "Abu Dhabi", "circuit": "Yas Marina", "date": "December 7, 2025", "laps": 58, "year": 2025},
+  {"id": "aus2026", "label": "Australia", "circuit": "Melbourne", "date": "March 8, 2026", "laps": 58, "year": 2026},
+  {"id": "chn2026", "label": "China", "circuit": "Shanghai", "date": "March 15, 2026", "laps": 56, "year": 2026}
 ]

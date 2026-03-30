@@ -1,0 +1,8674 @@
+{
+  "2024": [
+    {
+      "round": 1,
+      "country": "Bahrain",
+      "location": "Sakhir",
+      "event_name": "Bahrain Grand Prix",
+      "date": "March 2, 2024",
+      "grid": [
+        "VER",
+        "LEC",
+        "RUS",
+        "SAI",
+        "PER",
+        "ALO",
+        "NOR",
+        "PIA",
+        "HAM",
+        "HUL",
+        "TSU",
+        "STR",
+        "ALB",
+        "RIC",
+        "MAG",
+        "BOT",
+        "ZHO",
+        "SAR",
+        "OCO",
+        "GAS"
+      ],
+      "finish": [
+        "VER",
+        "PER",
+        "SAI",
+        "LEC",
+        "RUS",
+        "NOR",
+        "HAM",
+        "PIA",
+        "ALO",
+        "STR",
+        "ZHO",
+        "MAG",
+        "RIC",
+        "TSU",
+        "ALB",
+        "HUL",
+        "OCO",
+        "GAS",
+        "BOT",
+        "SAR"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671c6"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671c6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#e8002d"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#e8002d"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27f4d2"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#ff8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27f4d2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#ff8000"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#b6babd"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692ff"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692ff"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64c4ff"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#b6babd"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#ff87bc"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#ff87bc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64c4ff"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "country": "Saudi Arabia",
+      "location": "Jeddah",
+      "event_name": "Saudi Arabian Grand Prix",
+      "date": "March 9, 2024",
+      "grid": [
+        "VER",
+        "LEC",
+        "PER",
+        "ALO",
+        "PIA",
+        "NOR",
+        "RUS",
+        "HAM",
+        "TSU",
+        "STR",
+        "BEA",
+        "ALB",
+        "MAG",
+        "RIC",
+        "HUL",
+        "BOT",
+        "OCO",
+        "GAS",
+        "SAR",
+        "ZHO"
+      ],
+      "finish": [
+        "VER",
+        "PER",
+        "LEC",
+        "PIA",
+        "ALO",
+        "RUS",
+        "BEA",
+        "NOR",
+        "HAM",
+        "HUL",
+        "ALB",
+        "MAG",
+        "OCO",
+        "SAR",
+        "TSU",
+        "RIC",
+        "BOT",
+        "ZHO",
+        "STR",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671c6"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671c6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#e8002d"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#ff8000"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27f4d2"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Ferrari",
+          "color": "#e8002d"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#ff8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27f4d2"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#b6babd"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64c4ff"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#b6babd"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#ff87bc"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64c4ff"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692ff"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692ff"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#ff87bc"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "country": "Australia",
+      "location": "Melbourne",
+      "event_name": "Australian Grand Prix",
+      "date": "March 24, 2024",
+      "grid": [
+        "VER",
+        "SAI",
+        "NOR",
+        "LEC",
+        "PIA",
+        "PER",
+        "RUS",
+        "TSU",
+        "STR",
+        "ALO",
+        "HAM",
+        "ALB",
+        "BOT",
+        "MAG",
+        "OCO",
+        "HUL",
+        "GAS",
+        "RIC",
+        "ZHO"
+      ],
+      "finish": [
+        "SAI",
+        "LEC",
+        "NOR",
+        "PIA",
+        "PER",
+        "STR",
+        "TSU",
+        "ALO",
+        "HUL",
+        "MAG",
+        "ALB",
+        "RIC",
+        "GAS",
+        "BOT",
+        "ZHO",
+        "OCO",
+        "RUS",
+        "HAM",
+        "VER"
+      ],
+      "drivers": [
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "country": "Japan",
+      "location": "Suzuka",
+      "event_name": "Japanese Grand Prix",
+      "date": "April 7, 2024",
+      "grid": [
+        "VER",
+        "PER",
+        "NOR",
+        "SAI",
+        "ALO",
+        "PIA",
+        "HAM",
+        "LEC",
+        "RUS",
+        "TSU",
+        "RIC",
+        "HUL",
+        "BOT",
+        "ALB",
+        "OCO",
+        "STR",
+        "GAS",
+        "MAG",
+        "SAR",
+        "ZHO"
+      ],
+      "finish": [
+        "VER",
+        "PER",
+        "SAI",
+        "LEC",
+        "NOR",
+        "ALO",
+        "RUS",
+        "PIA",
+        "HAM",
+        "TSU",
+        "HUL",
+        "STR",
+        "MAG",
+        "BOT",
+        "OCO",
+        "GAS",
+        "SAR",
+        "ZHO",
+        "RIC",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "country": "China",
+      "location": "Shanghai",
+      "event_name": "Chinese Grand Prix",
+      "date": "April 21, 2024",
+      "grid": [
+        "VER",
+        "PER",
+        "ALO",
+        "NOR",
+        "PIA",
+        "LEC",
+        "SAI",
+        "RUS",
+        "HUL",
+        "BOT",
+        "STR",
+        "RIC",
+        "OCO",
+        "ALB",
+        "GAS",
+        "ZHO",
+        "MAG",
+        "HAM",
+        "TSU",
+        "SAR"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "PER",
+        "LEC",
+        "SAI",
+        "RUS",
+        "ALO",
+        "PIA",
+        "HAM",
+        "HUL",
+        "OCO",
+        "ALB",
+        "GAS",
+        "ZHO",
+        "STR",
+        "MAG",
+        "SAR",
+        "RIC",
+        "TSU",
+        "BOT"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "country": "United States",
+      "location": "Miami",
+      "event_name": "Miami Grand Prix",
+      "date": "May 5, 2024",
+      "grid": [
+        "VER",
+        "LEC",
+        "SAI",
+        "PER",
+        "NOR",
+        "PIA",
+        "RUS",
+        "HAM",
+        "HUL",
+        "TSU",
+        "STR",
+        "GAS",
+        "OCO",
+        "ALB",
+        "ALO",
+        "BOT",
+        "SAR",
+        "MAG",
+        "ZHO",
+        "RIC"
+      ],
+      "finish": [
+        "NOR",
+        "VER",
+        "LEC",
+        "PER",
+        "SAI",
+        "HAM",
+        "TSU",
+        "RUS",
+        "ALO",
+        "OCO",
+        "HUL",
+        "GAS",
+        "PIA",
+        "ZHO",
+        "RIC",
+        "BOT",
+        "STR",
+        "ALB",
+        "MAG",
+        "SAR"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "country": "Italy",
+      "location": "Imola",
+      "event_name": "Emilia Romagna Grand Prix",
+      "date": "May 19, 2024",
+      "grid": [
+        "VER",
+        "NOR",
+        "LEC",
+        "SAI",
+        "PIA",
+        "RUS",
+        "TSU",
+        "HAM",
+        "RIC",
+        "HUL",
+        "PER",
+        "OCO",
+        "STR",
+        "ALB",
+        "GAS",
+        "BOT",
+        "ZHO",
+        "MAG",
+        "SAR",
+        "ALO"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "LEC",
+        "PIA",
+        "SAI",
+        "HAM",
+        "RUS",
+        "PER",
+        "STR",
+        "TSU",
+        "HUL",
+        "MAG",
+        "RIC",
+        "OCO",
+        "ZHO",
+        "GAS",
+        "SAR",
+        "BOT",
+        "ALO",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "country": "Monaco",
+      "location": "Monaco",
+      "event_name": "Monaco Grand Prix",
+      "date": "May 26, 2024",
+      "grid": [
+        "LEC",
+        "PIA",
+        "SAI",
+        "NOR",
+        "RUS",
+        "VER",
+        "HAM",
+        "TSU",
+        "ALB",
+        "GAS",
+        "OCO",
+        "RIC",
+        "STR",
+        "ALO",
+        "SAR",
+        "PER",
+        "BOT",
+        "ZHO",
+        "HUL",
+        "MAG"
+      ],
+      "finish": [
+        "LEC",
+        "PIA",
+        "SAI",
+        "NOR",
+        "RUS",
+        "VER",
+        "HAM",
+        "TSU",
+        "ALB",
+        "GAS",
+        "ALO",
+        "RIC",
+        "BOT",
+        "STR",
+        "SAR",
+        "ZHO",
+        "OCO",
+        "PER",
+        "HUL",
+        "MAG"
+      ],
+      "drivers": [
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "country": "Canada",
+      "location": "Montréal",
+      "event_name": "Canadian Grand Prix",
+      "date": "June 9, 2024",
+      "grid": [
+        "RUS",
+        "VER",
+        "NOR",
+        "PIA",
+        "RIC",
+        "ALO",
+        "HAM",
+        "TSU",
+        "STR",
+        "ALB",
+        "LEC",
+        "SAI",
+        "SAR",
+        "MAG",
+        "GAS",
+        "PER",
+        "HUL",
+        "OCO",
+        "BOT",
+        "ZHO"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "RUS",
+        "HAM",
+        "PIA",
+        "ALO",
+        "STR",
+        "RIC",
+        "GAS",
+        "OCO",
+        "HUL",
+        "MAG",
+        "BOT",
+        "TSU",
+        "ZHO",
+        "SAI",
+        "ALB",
+        "PER",
+        "LEC",
+        "SAR"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "country": "Spain",
+      "location": "Barcelona",
+      "event_name": "Spanish Grand Prix",
+      "date": "June 23, 2024",
+      "grid": [
+        "NOR",
+        "VER",
+        "HAM",
+        "RUS",
+        "LEC",
+        "SAI",
+        "GAS",
+        "OCO",
+        "PIA",
+        "ALO",
+        "PER",
+        "BOT",
+        "HUL",
+        "STR",
+        "ZHO",
+        "MAG",
+        "TSU",
+        "RIC",
+        "SAR",
+        "ALB"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "HAM",
+        "RUS",
+        "LEC",
+        "SAI",
+        "PIA",
+        "PER",
+        "GAS",
+        "OCO",
+        "HUL",
+        "ALO",
+        "ZHO",
+        "STR",
+        "RIC",
+        "BOT",
+        "MAG",
+        "ALB",
+        "TSU",
+        "SAR"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "country": "Austria",
+      "location": "Spielberg",
+      "event_name": "Austrian Grand Prix",
+      "date": "June 30, 2024",
+      "grid": [
+        "VER",
+        "NOR",
+        "RUS",
+        "SAI",
+        "HAM",
+        "LEC",
+        "PIA",
+        "PER",
+        "HUL",
+        "OCO",
+        "RIC",
+        "MAG",
+        "GAS",
+        "TSU",
+        "ALO",
+        "ALB",
+        "STR",
+        "BOT",
+        "SAR",
+        "ZHO"
+      ],
+      "finish": [
+        "RUS",
+        "PIA",
+        "SAI",
+        "HAM",
+        "VER",
+        "HUL",
+        "PER",
+        "MAG",
+        "RIC",
+        "GAS",
+        "LEC",
+        "OCO",
+        "STR",
+        "TSU",
+        "ALB",
+        "BOT",
+        "ZHO",
+        "ALO",
+        "SAR",
+        "NOR"
+      ],
+      "drivers": [
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "country": "United Kingdom",
+      "location": "Silverstone",
+      "event_name": "British Grand Prix",
+      "date": "July 7, 2024",
+      "grid": [
+        "RUS",
+        "HAM",
+        "NOR",
+        "VER",
+        "PIA",
+        "HUL",
+        "SAI",
+        "STR",
+        "ALB",
+        "ALO",
+        "LEC",
+        "SAR",
+        "TSU",
+        "ZHO",
+        "RIC",
+        "BOT",
+        "MAG",
+        "OCO",
+        "GAS",
+        "PER"
+      ],
+      "finish": [
+        "HAM",
+        "VER",
+        "NOR",
+        "PIA",
+        "SAI",
+        "HUL",
+        "STR",
+        "ALO",
+        "ALB",
+        "TSU",
+        "SAR",
+        "MAG",
+        "RIC",
+        "LEC",
+        "BOT",
+        "OCO",
+        "PER",
+        "ZHO",
+        "RUS",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "country": "Hungary",
+      "location": "Budapest",
+      "event_name": "Hungarian Grand Prix",
+      "date": "July 21, 2024",
+      "grid": [
+        "NOR",
+        "PIA",
+        "VER",
+        "SAI",
+        "HAM",
+        "LEC",
+        "ALO",
+        "STR",
+        "RIC",
+        "TSU",
+        "HUL",
+        "BOT",
+        "ALB",
+        "SAR",
+        "MAG",
+        "PER",
+        "RUS",
+        "ZHO",
+        "OCO",
+        "GAS"
+      ],
+      "finish": [
+        "PIA",
+        "NOR",
+        "HAM",
+        "LEC",
+        "VER",
+        "SAI",
+        "PER",
+        "RUS",
+        "TSU",
+        "STR",
+        "ALO",
+        "RIC",
+        "HUL",
+        "ALB",
+        "MAG",
+        "BOT",
+        "SAR",
+        "OCO",
+        "ZHO",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "country": "Belgium",
+      "location": "Spa-Francorchamps",
+      "event_name": "Belgian Grand Prix",
+      "date": "July 28, 2024",
+      "grid": [
+        "LEC",
+        "PER",
+        "HAM",
+        "NOR",
+        "PIA",
+        "RUS",
+        "SAI",
+        "ALO",
+        "OCO",
+        "ALB",
+        "VER",
+        "GAS",
+        "RIC",
+        "BOT",
+        "STR",
+        "HUL",
+        "MAG",
+        "SAR",
+        "ZHO",
+        "TSU"
+      ],
+      "finish": [
+        "HAM",
+        "PIA",
+        "LEC",
+        "VER",
+        "NOR",
+        "SAI",
+        "PER",
+        "ALO",
+        "OCO",
+        "RIC",
+        "STR",
+        "ALB",
+        "GAS",
+        "MAG",
+        "BOT",
+        "TSU",
+        "SAR",
+        "HUL",
+        "ZHO",
+        "RUS"
+      ],
+      "drivers": [
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "country": "Netherlands",
+      "location": "Zandvoort",
+      "event_name": "Dutch Grand Prix",
+      "date": "August 25, 2024",
+      "grid": [
+        "NOR",
+        "VER",
+        "PIA",
+        "RUS",
+        "PER",
+        "LEC",
+        "ALO",
+        "STR",
+        "GAS",
+        "SAI",
+        "TSU",
+        "HUL",
+        "RIC",
+        "HAM",
+        "OCO",
+        "BOT",
+        "ZHO",
+        "SAR",
+        "ALB",
+        "MAG"
+      ],
+      "finish": [
+        "NOR",
+        "VER",
+        "LEC",
+        "PIA",
+        "SAI",
+        "PER",
+        "RUS",
+        "HAM",
+        "GAS",
+        "ALO",
+        "HUL",
+        "RIC",
+        "STR",
+        "ALB",
+        "OCO",
+        "SAR",
+        "TSU",
+        "MAG",
+        "BOT",
+        "ZHO"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "SAR",
+          "name": "Logan Sargeant",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "country": "Italy",
+      "location": "Monza",
+      "event_name": "Italian Grand Prix",
+      "date": "September 1, 2024",
+      "grid": [
+        "NOR",
+        "PIA",
+        "RUS",
+        "LEC",
+        "SAI",
+        "HAM",
+        "VER",
+        "PER",
+        "ALB",
+        "HUL",
+        "ALO",
+        "RIC",
+        "MAG",
+        "GAS",
+        "OCO",
+        "TSU",
+        "STR",
+        "COL",
+        "BOT",
+        "ZHO"
+      ],
+      "finish": [
+        "LEC",
+        "PIA",
+        "NOR",
+        "SAI",
+        "HAM",
+        "VER",
+        "RUS",
+        "PER",
+        "ALB",
+        "MAG",
+        "ALO",
+        "COL",
+        "RIC",
+        "OCO",
+        "GAS",
+        "BOT",
+        "HUL",
+        "ZHO",
+        "STR",
+        "TSU"
+      ],
+      "drivers": [
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "country": "Azerbaijan",
+      "location": "Baku",
+      "event_name": "Azerbaijan Grand Prix",
+      "date": "September 15, 2024",
+      "grid": [
+        "LEC",
+        "PIA",
+        "SAI",
+        "PER",
+        "RUS",
+        "VER",
+        "ALO",
+        "COL",
+        "ALB",
+        "BEA",
+        "TSU",
+        "HUL",
+        "STR",
+        "RIC",
+        "NOR",
+        "BOT",
+        "ZHO",
+        "GAS",
+        "HAM",
+        "OCO"
+      ],
+      "finish": [
+        "PIA",
+        "LEC",
+        "RUS",
+        "NOR",
+        "VER",
+        "ALO",
+        "ALB",
+        "COL",
+        "HAM",
+        "BEA",
+        "HUL",
+        "GAS",
+        "RIC",
+        "ZHO",
+        "OCO",
+        "BOT",
+        "PER",
+        "SAI",
+        "STR",
+        "TSU"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "country": "Singapore",
+      "location": "Marina Bay",
+      "event_name": "Singapore Grand Prix",
+      "date": "September 22, 2024",
+      "grid": [
+        "NOR",
+        "VER",
+        "HAM",
+        "RUS",
+        "PIA",
+        "HUL",
+        "ALO",
+        "TSU",
+        "LEC",
+        "SAI",
+        "ALB",
+        "COL",
+        "PER",
+        "MAG",
+        "OCO",
+        "RIC",
+        "STR",
+        "GAS",
+        "BOT",
+        "ZHO"
+      ],
+      "finish": [
+        "NOR",
+        "VER",
+        "PIA",
+        "RUS",
+        "LEC",
+        "HAM",
+        "SAI",
+        "ALO",
+        "HUL",
+        "PER",
+        "COL",
+        "TSU",
+        "OCO",
+        "STR",
+        "ZHO",
+        "BOT",
+        "GAS",
+        "RIC",
+        "MAG",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "RIC",
+          "name": "Daniel Ricciardo",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        }
+      ]
+    },
+    {
+      "round": 19,
+      "country": "United States",
+      "location": "Austin",
+      "event_name": "United States Grand Prix",
+      "date": "October 20, 2024",
+      "grid": [
+        "NOR",
+        "VER",
+        "SAI",
+        "LEC",
+        "PIA",
+        "GAS",
+        "ALO",
+        "MAG",
+        "PER",
+        "TSU",
+        "HUL",
+        "OCO",
+        "STR",
+        "ALB",
+        "COL",
+        "BOT",
+        "HAM",
+        "ZHO",
+        "LAW",
+        "RUS"
+      ],
+      "finish": [
+        "LEC",
+        "SAI",
+        "VER",
+        "NOR",
+        "PIA",
+        "RUS",
+        "PER",
+        "HUL",
+        "LAW",
+        "COL",
+        "MAG",
+        "GAS",
+        "ALO",
+        "TSU",
+        "STR",
+        "ALB",
+        "BOT",
+        "OCO",
+        "ZHO",
+        "HAM"
+      ],
+      "drivers": [
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        }
+      ]
+    },
+    {
+      "round": 20,
+      "country": "Mexico",
+      "location": "Mexico City",
+      "event_name": "Mexico City Grand Prix",
+      "date": "October 27, 2024",
+      "grid": [
+        "SAI",
+        "VER",
+        "NOR",
+        "LEC",
+        "RUS",
+        "HAM",
+        "MAG",
+        "GAS",
+        "ALB",
+        "HUL",
+        "TSU",
+        "LAW",
+        "ALO",
+        "STR",
+        "BOT",
+        "COL",
+        "PIA",
+        "PER",
+        "ZHO",
+        "OCO"
+      ],
+      "finish": [
+        "SAI",
+        "NOR",
+        "LEC",
+        "HAM",
+        "RUS",
+        "VER",
+        "MAG",
+        "PIA",
+        "HUL",
+        "GAS",
+        "STR",
+        "COL",
+        "OCO",
+        "BOT",
+        "ZHO",
+        "LAW",
+        "PER",
+        "ALO",
+        "ALB",
+        "TSU"
+      ],
+      "drivers": [
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        }
+      ]
+    },
+    {
+      "round": 21,
+      "country": "Brazil",
+      "location": "São Paulo",
+      "event_name": "São Paulo Grand Prix",
+      "date": "November 3, 2024",
+      "grid": [
+        "NOR",
+        "RUS",
+        "TSU",
+        "OCO",
+        "LAW",
+        "LEC",
+        "ALB",
+        "PIA",
+        "ALO",
+        "STR",
+        "BOT",
+        "PER",
+        "GAS",
+        "HAM",
+        "BEA",
+        "COL",
+        "VER",
+        "HUL",
+        "ZHO",
+        "SAI"
+      ],
+      "finish": [
+        "VER",
+        "OCO",
+        "GAS",
+        "RUS",
+        "LEC",
+        "NOR",
+        "TSU",
+        "PIA",
+        "LAW",
+        "HAM",
+        "PER",
+        "BEA",
+        "BOT",
+        "ALO",
+        "ZHO",
+        "SAI",
+        "COL",
+        "ALB",
+        "STR",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        }
+      ]
+    },
+    {
+      "round": 22,
+      "country": "United States",
+      "location": "Las Vegas",
+      "event_name": "Las Vegas Grand Prix",
+      "date": "November 23, 2024",
+      "grid": [
+        "RUS",
+        "SAI",
+        "GAS",
+        "LEC",
+        "VER",
+        "NOR",
+        "TSU",
+        "PIA",
+        "HUL",
+        "HAM",
+        "OCO",
+        "MAG",
+        "ZHO",
+        "LAW",
+        "PER",
+        "ALO",
+        "ALB",
+        "STR",
+        "BOT",
+        "COL"
+      ],
+      "finish": [
+        "RUS",
+        "HAM",
+        "SAI",
+        "LEC",
+        "VER",
+        "NOR",
+        "PIA",
+        "HUL",
+        "TSU",
+        "PER",
+        "ALO",
+        "MAG",
+        "ZHO",
+        "COL",
+        "STR",
+        "LAW",
+        "OCO",
+        "BOT",
+        "ALB",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        }
+      ]
+    },
+    {
+      "round": 23,
+      "country": "Qatar",
+      "location": "Lusail",
+      "event_name": "Qatar Grand Prix",
+      "date": "December 1, 2024",
+      "grid": [
+        "RUS",
+        "VER",
+        "NOR",
+        "PIA",
+        "LEC",
+        "HAM",
+        "SAI",
+        "ALO",
+        "PER",
+        "MAG",
+        "GAS",
+        "ZHO",
+        "BOT",
+        "TSU",
+        "STR",
+        "ALB",
+        "LAW",
+        "HUL",
+        "COL",
+        "OCO"
+      ],
+      "finish": [
+        "VER",
+        "LEC",
+        "PIA",
+        "RUS",
+        "GAS",
+        "SAI",
+        "ALO",
+        "ZHO",
+        "MAG",
+        "NOR",
+        "BOT",
+        "HAM",
+        "TSU",
+        "LAW",
+        "ALB",
+        "HUL",
+        "PER",
+        "STR",
+        "COL",
+        "OCO"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Alpine",
+          "color": "#0093cc"
+        }
+      ]
+    },
+    {
+      "round": 24,
+      "country": "United Arab Emirates",
+      "location": "Yas Island",
+      "event_name": "Abu Dhabi Grand Prix",
+      "date": "December 8, 2024",
+      "grid": [
+        "NOR",
+        "PIA",
+        "SAI",
+        "VER",
+        "GAS",
+        "RUS",
+        "HUL",
+        "ALO",
+        "BOT",
+        "PER",
+        "TSU",
+        "LAW",
+        "STR",
+        "MAG",
+        "ZHO",
+        "HAM",
+        "DOO",
+        "ALB",
+        "LEC",
+        "COL"
+      ],
+      "finish": [
+        "NOR",
+        "SAI",
+        "LEC",
+        "HAM",
+        "RUS",
+        "VER",
+        "GAS",
+        "HUL",
+        "ALO",
+        "PIA",
+        "ALB",
+        "TSU",
+        "ZHO",
+        "STR",
+        "DOO",
+        "MAG",
+        "LAW",
+        "BOT",
+        "COL",
+        "PER"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ZHO",
+          "name": "Guanyu Zhou",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093cc"
+        },
+        {
+          "id": "MAG",
+          "name": "Kevin Magnussen",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "RB",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Kick Sauber",
+          "color": "#52e252"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        }
+      ]
+    }
+  ],
+  "2025": [
+    {
+      "round": 1,
+      "country": "Australia",
+      "location": "Melbourne",
+      "event_name": "Australian Grand Prix",
+      "date": "March 16, 2025",
+      "grid": [
+        "NOR",
+        "PIA",
+        "VER",
+        "RUS",
+        "TSU",
+        "ALB",
+        "LEC",
+        "HAM",
+        "GAS",
+        "SAI",
+        "HAD",
+        "ALO",
+        "STR",
+        "DOO",
+        "BOR",
+        "ANT",
+        "HUL",
+        "LAW",
+        "OCO",
+        "BEA"
+      ],
+      "finish": [
+        "NOR",
+        "VER",
+        "RUS",
+        "ANT",
+        "ALB",
+        "STR",
+        "HUL",
+        "LEC",
+        "PIA",
+        "HAM",
+        "GAS",
+        "TSU",
+        "OCO",
+        "BEA",
+        "LAW",
+        "BOR",
+        "ALO",
+        "SAI",
+        "DOO",
+        "HAD"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ANT",
+          "name": "Andrea Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "country": "China",
+      "location": "Shanghai",
+      "event_name": "Chinese Grand Prix",
+      "date": "March 23, 2025",
+      "grid": [
+        "PIA",
+        "RUS",
+        "NOR",
+        "VER",
+        "HAM",
+        "LEC",
+        "HAD",
+        "ANT",
+        "TSU",
+        "ALB",
+        "OCO",
+        "HUL",
+        "ALO",
+        "STR",
+        "SAI",
+        "GAS",
+        "BEA",
+        "DOO",
+        "BOR",
+        "LAW"
+      ],
+      "finish": [
+        "PIA",
+        "NOR",
+        "RUS",
+        "VER",
+        "OCO",
+        "ANT",
+        "ALB",
+        "BEA",
+        "STR",
+        "SAI",
+        "HAD",
+        "LAW",
+        "DOO",
+        "BOR",
+        "HUL",
+        "TSU",
+        "ALO",
+        "LEC",
+        "HAM",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "country": "Japan",
+      "location": "Suzuka",
+      "event_name": "Japanese Grand Prix",
+      "date": "April 6, 2025",
+      "grid": [
+        "VER",
+        "NOR",
+        "PIA",
+        "LEC",
+        "RUS",
+        "ANT",
+        "HAD",
+        "HAM",
+        "ALB",
+        "BEA",
+        "GAS",
+        "ALO",
+        "LAW",
+        "TSU",
+        "SAI",
+        "HUL",
+        "BOR",
+        "OCO",
+        "DOO",
+        "STR"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "PIA",
+        "LEC",
+        "RUS",
+        "ANT",
+        "HAM",
+        "HAD",
+        "ALB",
+        "BEA",
+        "ALO",
+        "TSU",
+        "GAS",
+        "SAI",
+        "DOO",
+        "HUL",
+        "LAW",
+        "OCO",
+        "BOR",
+        "STR"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "country": "Bahrain",
+      "location": "Sakhir",
+      "event_name": "Bahrain Grand Prix",
+      "date": "April 13, 2025",
+      "grid": [
+        "PIA",
+        "LEC",
+        "RUS",
+        "GAS",
+        "ANT",
+        "NOR",
+        "VER",
+        "SAI",
+        "HAM",
+        "TSU",
+        "DOO",
+        "HAD",
+        "ALO",
+        "OCO",
+        "ALB",
+        "HUL",
+        "LAW",
+        "BOR",
+        "STR",
+        "BEA"
+      ],
+      "finish": [
+        "PIA",
+        "RUS",
+        "NOR",
+        "LEC",
+        "HAM",
+        "VER",
+        "GAS",
+        "OCO",
+        "TSU",
+        "BEA",
+        "ANT",
+        "ALB",
+        "HAD",
+        "DOO",
+        "ALO",
+        "LAW",
+        "STR",
+        "BOR",
+        "SAI",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "country": "Saudi Arabia",
+      "location": "Jeddah",
+      "event_name": "Saudi Arabian Grand Prix",
+      "date": "April 20, 2025",
+      "grid": [
+        "VER",
+        "PIA",
+        "RUS",
+        "LEC",
+        "ANT",
+        "SAI",
+        "HAM",
+        "TSU",
+        "GAS",
+        "NOR",
+        "ALB",
+        "LAW",
+        "ALO",
+        "HAD",
+        "BEA",
+        "STR",
+        "DOO",
+        "HUL",
+        "OCO",
+        "BOR"
+      ],
+      "finish": [
+        "PIA",
+        "VER",
+        "LEC",
+        "NOR",
+        "RUS",
+        "ANT",
+        "HAM",
+        "SAI",
+        "ALB",
+        "HAD",
+        "ALO",
+        "LAW",
+        "BEA",
+        "OCO",
+        "HUL",
+        "STR",
+        "DOO",
+        "BOR",
+        "TSU",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "country": "United States",
+      "location": "Miami Gardens",
+      "event_name": "Miami Grand Prix",
+      "date": "May 4, 2025",
+      "grid": [
+        "VER",
+        "NOR",
+        "ANT",
+        "PIA",
+        "RUS",
+        "SAI",
+        "ALB",
+        "LEC",
+        "OCO",
+        "TSU",
+        "HAD",
+        "HAM",
+        "BOR",
+        "DOO",
+        "LAW",
+        "HUL",
+        "ALO",
+        "STR",
+        "BEA",
+        "GAS"
+      ],
+      "finish": [
+        "PIA",
+        "NOR",
+        "RUS",
+        "VER",
+        "ALB",
+        "ANT",
+        "LEC",
+        "HAM",
+        "SAI",
+        "TSU",
+        "HAD",
+        "OCO",
+        "GAS",
+        "HUL",
+        "ALO",
+        "STR",
+        "LAW",
+        "BOR",
+        "BEA",
+        "DOO"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "DOO",
+          "name": "Jack Doohan",
+          "team": "Alpine",
+          "color": "#0093CC"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "country": "Italy",
+      "location": "Imola",
+      "event_name": "Emilia Romagna Grand Prix",
+      "date": "May 18, 2025",
+      "grid": [
+        "PIA",
+        "VER",
+        "RUS",
+        "NOR",
+        "ALO",
+        "SAI",
+        "ALB",
+        "STR",
+        "HAD",
+        "GAS",
+        "LEC",
+        "HAM",
+        "ANT",
+        "BOR",
+        "LAW",
+        "COL",
+        "HUL",
+        "OCO",
+        "BEA",
+        "TSU"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "PIA",
+        "HAM",
+        "ALB",
+        "LEC",
+        "RUS",
+        "SAI",
+        "HAD",
+        "TSU",
+        "ALO",
+        "HUL",
+        "GAS",
+        "LAW",
+        "STR",
+        "COL",
+        "BEA",
+        "BOR",
+        "ANT",
+        "OCO"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#FF8000"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#E80020"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#64C4FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#3671C6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6692FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#0093CC"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#52E252"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#27F4D2"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#B6BABD"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "country": "Monaco",
+      "location": "Monaco",
+      "event_name": "Monaco Grand Prix",
+      "date": "May 25, 2025",
+      "grid": [
+        "NOR",
+        "LEC",
+        "PIA",
+        "VER",
+        "HAD",
+        "ALO",
+        "HAM",
+        "OCO",
+        "LAW",
+        "ALB",
+        "SAI",
+        "TSU",
+        "HUL",
+        "RUS",
+        "ANT",
+        "BOR",
+        "GAS",
+        "COL",
+        "STR",
+        "BEA"
+      ],
+      "finish": [
+        "NOR",
+        "LEC",
+        "PIA",
+        "VER",
+        "HAM",
+        "HAD",
+        "OCO",
+        "LAW",
+        "ALB",
+        "SAI",
+        "RUS",
+        "BEA",
+        "COL",
+        "BOR",
+        "STR",
+        "HUL",
+        "TSU",
+        "ANT",
+        "ALO",
+        "GAS"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "country": "Spain",
+      "location": "Barcelona",
+      "event_name": "Spanish Grand Prix",
+      "date": "June 1, 2025",
+      "grid": [
+        "PIA",
+        "NOR",
+        "VER",
+        "RUS",
+        "HAM",
+        "ANT",
+        "LEC",
+        "GAS",
+        "HAD",
+        "ALO",
+        "ALB",
+        "BOR",
+        "LAW",
+        "BEA",
+        "HUL",
+        "OCO",
+        "SAI",
+        "COL",
+        "TSU"
+      ],
+      "finish": [
+        "PIA",
+        "NOR",
+        "LEC",
+        "RUS",
+        "HUL",
+        "HAM",
+        "HAD",
+        "GAS",
+        "ALO",
+        "VER",
+        "LAW",
+        "BOR",
+        "TSU",
+        "SAI",
+        "COL",
+        "OCO",
+        "BEA",
+        "ANT",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "country": "Canada",
+      "location": "Montréal",
+      "event_name": "Canadian Grand Prix",
+      "date": "June 15, 2025",
+      "grid": [
+        "RUS",
+        "VER",
+        "PIA",
+        "ANT",
+        "HAM",
+        "ALO",
+        "NOR",
+        "LEC",
+        "ALB",
+        "COL",
+        "HUL",
+        "HAD",
+        "BEA",
+        "OCO",
+        "BOR",
+        "SAI",
+        "STR",
+        "TSU",
+        "LAW",
+        "GAS"
+      ],
+      "finish": [
+        "RUS",
+        "VER",
+        "ANT",
+        "PIA",
+        "LEC",
+        "HAM",
+        "ALO",
+        "HUL",
+        "OCO",
+        "SAI",
+        "BEA",
+        "TSU",
+        "COL",
+        "BOR",
+        "GAS",
+        "HAD",
+        "STR",
+        "NOR",
+        "LAW",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "country": "Austria",
+      "location": "Spielberg",
+      "event_name": "Austrian Grand Prix",
+      "date": "June 29, 2025",
+      "grid": [
+        "NOR",
+        "LEC",
+        "PIA",
+        "HAM",
+        "RUS",
+        "LAW",
+        "VER",
+        "BOR",
+        "ANT",
+        "GAS",
+        "ALO",
+        "ALB",
+        "HAD",
+        "COL",
+        "BEA",
+        "STR",
+        "OCO",
+        "TSU",
+        "SAI",
+        "HUL"
+      ],
+      "finish": [
+        "NOR",
+        "PIA",
+        "LEC",
+        "HAM",
+        "RUS",
+        "LAW",
+        "ALO",
+        "BOR",
+        "HUL",
+        "OCO",
+        "BEA",
+        "HAD",
+        "GAS",
+        "STR",
+        "COL",
+        "TSU",
+        "ALB",
+        "VER",
+        "ANT",
+        "SAI"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "country": "United Kingdom",
+      "location": "Silverstone",
+      "event_name": "British Grand Prix",
+      "date": "July 6, 2025",
+      "grid": [
+        "VER",
+        "PIA",
+        "NOR",
+        "RUS",
+        "HAM",
+        "LEC",
+        "ALO",
+        "GAS",
+        "SAI",
+        "ANT",
+        "TSU",
+        "HAD",
+        "ALB",
+        "OCO",
+        "LAW",
+        "BOR",
+        "STR",
+        "BEA",
+        "HUL",
+        "COL"
+      ],
+      "finish": [
+        "NOR",
+        "PIA",
+        "HUL",
+        "HAM",
+        "VER",
+        "GAS",
+        "STR",
+        "ALB",
+        "ALO",
+        "RUS",
+        "BEA",
+        "SAI",
+        "OCO",
+        "LEC",
+        "TSU",
+        "ANT",
+        "HAD",
+        "BOR",
+        "LAW",
+        "COL"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "country": "Belgium",
+      "location": "Spa-Francorchamps",
+      "event_name": "Belgian Grand Prix",
+      "date": "July 27, 2025",
+      "grid": [
+        "NOR",
+        "PIA",
+        "LEC",
+        "VER",
+        "ALB",
+        "RUS",
+        "TSU",
+        "HAD",
+        "LAW",
+        "BOR",
+        "OCO",
+        "BEA",
+        "GAS",
+        "HUL",
+        "COL",
+        "STR",
+        "SAI",
+        "HAM",
+        "ANT",
+        "ALO"
+      ],
+      "finish": [
+        "PIA",
+        "NOR",
+        "LEC",
+        "VER",
+        "RUS",
+        "ALB",
+        "HAM",
+        "LAW",
+        "BOR",
+        "GAS",
+        "BEA",
+        "HUL",
+        "TSU",
+        "STR",
+        "OCO",
+        "ANT",
+        "ALO",
+        "SAI",
+        "COL",
+        "HAD"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "country": "Hungary",
+      "location": "Budapest",
+      "event_name": "Hungarian Grand Prix",
+      "date": "August 3, 2025",
+      "grid": [
+        "LEC",
+        "PIA",
+        "NOR",
+        "RUS",
+        "ALO",
+        "STR",
+        "BOR",
+        "VER",
+        "LAW",
+        "HAD",
+        "BEA",
+        "HAM",
+        "SAI",
+        "COL",
+        "ANT",
+        "GAS",
+        "OCO",
+        "HUL",
+        "ALB",
+        "TSU"
+      ],
+      "finish": [
+        "NOR",
+        "PIA",
+        "RUS",
+        "LEC",
+        "ALO",
+        "BOR",
+        "STR",
+        "LAW",
+        "VER",
+        "ANT",
+        "HAD",
+        "HAM",
+        "HUL",
+        "SAI",
+        "ALB",
+        "OCO",
+        "TSU",
+        "COL",
+        "GAS",
+        "BEA"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "country": "Netherlands",
+      "location": "Zandvoort",
+      "event_name": "Dutch Grand Prix",
+      "date": "August 31, 2025",
+      "grid": [
+        "PIA",
+        "NOR",
+        "VER",
+        "HAD",
+        "RUS",
+        "LEC",
+        "HAM",
+        "LAW",
+        "SAI",
+        "ALO",
+        "ANT",
+        "TSU",
+        "BOR",
+        "GAS",
+        "ALB",
+        "COL",
+        "HUL",
+        "OCO",
+        "STR",
+        "BEA"
+      ],
+      "finish": [
+        "PIA",
+        "VER",
+        "HAD",
+        "RUS",
+        "ALB",
+        "BEA",
+        "STR",
+        "ALO",
+        "TSU",
+        "OCO",
+        "COL",
+        "LAW",
+        "SAI",
+        "HUL",
+        "BOR",
+        "ANT",
+        "GAS",
+        "NOR",
+        "LEC",
+        "HAM"
+      ],
+      "drivers": [
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "country": "Italy",
+      "location": "Monza",
+      "event_name": "Italian Grand Prix",
+      "date": "September 7, 2025",
+      "grid": [
+        "VER",
+        "NOR",
+        "PIA",
+        "LEC",
+        "RUS",
+        "ANT",
+        "BOR",
+        "ALO",
+        "TSU",
+        "HAM",
+        "BEA",
+        "HUL",
+        "SAI",
+        "ALB",
+        "OCO",
+        "STR",
+        "COL",
+        "LAW",
+        "HAD",
+        "GAS"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "PIA",
+        "LEC",
+        "RUS",
+        "HAM",
+        "ALB",
+        "BOR",
+        "ANT",
+        "HAD",
+        "SAI",
+        "BEA",
+        "TSU",
+        "LAW",
+        "OCO",
+        "GAS",
+        "COL",
+        "STR",
+        "ALO",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "country": "Azerbaijan",
+      "location": "Baku",
+      "event_name": "Azerbaijan Grand Prix",
+      "date": "September 21, 2025",
+      "grid": [
+        "VER",
+        "SAI",
+        "LAW",
+        "ANT",
+        "RUS",
+        "TSU",
+        "NOR",
+        "HAD",
+        "PIA",
+        "LEC",
+        "ALO",
+        "HAM",
+        "BOR",
+        "STR",
+        "BEA",
+        "COL",
+        "HUL",
+        "GAS",
+        "ALB",
+        "OCO"
+      ],
+      "finish": [
+        "VER",
+        "RUS",
+        "SAI",
+        "ANT",
+        "LAW",
+        "TSU",
+        "NOR",
+        "HAM",
+        "LEC",
+        "HAD",
+        "BOR",
+        "BEA",
+        "ALB",
+        "OCO",
+        "ALO",
+        "HUL",
+        "STR",
+        "GAS",
+        "COL",
+        "PIA"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "country": "Singapore",
+      "location": "Marina Bay",
+      "event_name": "Singapore Grand Prix",
+      "date": "October 5, 2025",
+      "grid": [
+        "RUS",
+        "VER",
+        "PIA",
+        "ANT",
+        "NOR",
+        "HAM",
+        "LEC",
+        "HAD",
+        "BEA",
+        "ALO",
+        "HUL",
+        "LAW",
+        "TSU",
+        "BOR",
+        "STR",
+        "COL",
+        "OCO",
+        "SAI",
+        "GAS",
+        "ALB"
+      ],
+      "finish": [
+        "RUS",
+        "VER",
+        "NOR",
+        "PIA",
+        "ANT",
+        "LEC",
+        "ALO",
+        "HAM",
+        "BEA",
+        "SAI",
+        "HAD",
+        "TSU",
+        "STR",
+        "ALB",
+        "LAW",
+        "COL",
+        "BOR",
+        "OCO",
+        "GAS",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        }
+      ]
+    },
+    {
+      "round": 19,
+      "country": "United States",
+      "location": "Austin",
+      "event_name": "United States Grand Prix",
+      "date": "October 19, 2025",
+      "grid": [
+        "VER",
+        "NOR",
+        "LEC",
+        "RUS",
+        "HAM",
+        "PIA",
+        "ANT",
+        "BEA",
+        "SAI",
+        "ALO",
+        "HUL",
+        "LAW",
+        "TSU",
+        "GAS",
+        "COL",
+        "BOR",
+        "OCO",
+        "ALB",
+        "STR",
+        "HAD"
+      ],
+      "finish": [
+        "VER",
+        "NOR",
+        "LEC",
+        "HAM",
+        "PIA",
+        "RUS",
+        "TSU",
+        "HUL",
+        "BEA",
+        "ALO",
+        "LAW",
+        "STR",
+        "ANT",
+        "ALB",
+        "OCO",
+        "HAD",
+        "COL",
+        "BOR",
+        "GAS",
+        "SAI"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        }
+      ]
+    },
+    {
+      "round": 20,
+      "country": "Mexico",
+      "location": "Mexico City",
+      "event_name": "Mexico City Grand Prix",
+      "date": "October 26, 2025",
+      "grid": [
+        "NOR",
+        "LEC",
+        "HAM",
+        "RUS",
+        "VER",
+        "ANT",
+        "PIA",
+        "HAD",
+        "BEA",
+        "TSU",
+        "OCO",
+        "SAI",
+        "HUL",
+        "ALO",
+        "LAW",
+        "BOR",
+        "ALB",
+        "GAS",
+        "STR",
+        "COL"
+      ],
+      "finish": [
+        "NOR",
+        "LEC",
+        "VER",
+        "BEA",
+        "PIA",
+        "ANT",
+        "RUS",
+        "HAM",
+        "OCO",
+        "BOR",
+        "TSU",
+        "ALB",
+        "HAD",
+        "STR",
+        "GAS",
+        "COL",
+        "SAI",
+        "ALO",
+        "HUL",
+        "LAW"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        }
+      ]
+    },
+    {
+      "round": 21,
+      "country": "Brazil",
+      "location": "São Paulo",
+      "event_name": "São Paulo Grand Prix",
+      "date": "November 9, 2025",
+      "grid": [
+        "NOR",
+        "ANT",
+        "LEC",
+        "PIA",
+        "HAD",
+        "RUS",
+        "LAW",
+        "BEA",
+        "GAS",
+        "HUL",
+        "ALO",
+        "ALB",
+        "HAM",
+        "STR",
+        "SAI",
+        "COL",
+        "TSU",
+        "BOR",
+        "VER",
+        "OCO"
+      ],
+      "finish": [
+        "NOR",
+        "ANT",
+        "VER",
+        "RUS",
+        "PIA",
+        "BEA",
+        "LAW",
+        "HAD",
+        "HUL",
+        "GAS",
+        "ALB",
+        "OCO",
+        "SAI",
+        "ALO",
+        "COL",
+        "STR",
+        "TSU",
+        "HAM",
+        "LEC",
+        "BOR"
+      ],
+      "drivers": [
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        }
+      ]
+    },
+    {
+      "round": 22,
+      "country": "United States",
+      "location": "Las Vegas",
+      "event_name": "Las Vegas Grand Prix",
+      "date": "November 22, 2025",
+      "grid": [
+        "NOR",
+        "VER",
+        "SAI",
+        "RUS",
+        "PIA",
+        "LAW",
+        "ALO",
+        "HAD",
+        "LEC",
+        "GAS",
+        "HUL",
+        "STR",
+        "OCO",
+        "BEA",
+        "COL",
+        "ALB",
+        "ANT",
+        "BOR",
+        "HAM",
+        "TSU"
+      ],
+      "finish": [
+        "VER",
+        "RUS",
+        "ANT",
+        "LEC",
+        "SAI",
+        "HAD",
+        "HUL",
+        "HAM",
+        "OCO",
+        "BEA",
+        "ALO",
+        "TSU",
+        "GAS",
+        "LAW",
+        "COL",
+        "ALB",
+        "BOR",
+        "STR",
+        "NOR",
+        "PIA"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        }
+      ]
+    },
+    {
+      "round": 23,
+      "country": "Qatar",
+      "location": "Lusail",
+      "event_name": "Qatar Grand Prix",
+      "date": "November 30, 2025",
+      "grid": [
+        "PIA",
+        "NOR",
+        "VER",
+        "RUS",
+        "ANT",
+        "HAD",
+        "SAI",
+        "ALO",
+        "GAS",
+        "LEC",
+        "HUL",
+        "LAW",
+        "BEA",
+        "ALB",
+        "TSU",
+        "OCO",
+        "HAM",
+        "STR",
+        "BOR",
+        "COL"
+      ],
+      "finish": [
+        "VER",
+        "PIA",
+        "SAI",
+        "NOR",
+        "ANT",
+        "RUS",
+        "ALO",
+        "LEC",
+        "LAW",
+        "TSU",
+        "ALB",
+        "HAM",
+        "BOR",
+        "COL",
+        "OCO",
+        "GAS",
+        "STR",
+        "HAD",
+        "BEA",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        }
+      ]
+    },
+    {
+      "round": 24,
+      "country": "United Arab Emirates",
+      "location": "Yas Island",
+      "event_name": "Abu Dhabi Grand Prix",
+      "date": "December 7, 2025",
+      "grid": [
+        "VER",
+        "NOR",
+        "PIA",
+        "RUS",
+        "LEC",
+        "ALO",
+        "BOR",
+        "OCO",
+        "HAD",
+        "TSU",
+        "BEA",
+        "SAI",
+        "LAW",
+        "ANT",
+        "STR",
+        "HAM",
+        "ALB",
+        "HUL",
+        "GAS",
+        "COL"
+      ],
+      "finish": [
+        "VER",
+        "PIA",
+        "NOR",
+        "LEC",
+        "RUS",
+        "ALO",
+        "OCO",
+        "HAM",
+        "HUL",
+        "STR",
+        "BOR",
+        "BEA",
+        "SAI",
+        "TSU",
+        "ANT",
+        "ALB",
+        "HAD",
+        "LAW",
+        "GAS",
+        "COL"
+      ],
+      "drivers": [
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Kick Sauber",
+          "color": "#01C00E"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "TSU",
+          "name": "Yuki Tsunoda",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        }
+      ]
+    }
+  ],
+  "2026": [
+    {
+      "round": 1,
+      "country": "Australia",
+      "location": "Melbourne",
+      "event_name": "Australian Grand Prix",
+      "date": "March 8, 2026",
+      "grid": [
+        "RUS",
+        "ANT",
+        "HAD",
+        "LEC",
+        "PIA",
+        "NOR",
+        "HAM",
+        "LAW",
+        "LIN",
+        "BOR",
+        "HUL",
+        "BEA",
+        "OCO",
+        "GAS",
+        "ALB",
+        "COL",
+        "ALO",
+        "PER",
+        "BOT",
+        "VER",
+        "SAI",
+        "STR"
+      ],
+      "finish": [
+        "RUS",
+        "ANT",
+        "LEC",
+        "HAM",
+        "NOR",
+        "VER",
+        "BEA",
+        "LIN",
+        "BOR",
+        "GAS",
+        "OCO",
+        "ALB",
+        "LAW",
+        "COL",
+        "SAI",
+        "PER",
+        "STR",
+        "ALO",
+        "BOT",
+        "HAD",
+        "PIA",
+        "HUL"
+      ],
+      "drivers": [
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "LIN",
+          "name": "Arvid Lindblad",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Audi",
+          "color": "#F50537"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Cadillac",
+          "color": "#909090"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Cadillac",
+          "color": "#909090"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Audi",
+          "color": "#F50537"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "country": "China",
+      "location": "Shanghai",
+      "event_name": "Chinese Grand Prix",
+      "date": "March 15, 2026",
+      "grid": [
+        "ANT",
+        "RUS",
+        "HAM",
+        "LEC",
+        "PIA",
+        "NOR",
+        "GAS",
+        "VER",
+        "HAD",
+        "BEA",
+        "HUL",
+        "COL",
+        "OCO",
+        "LAW",
+        "LIN",
+        "BOR",
+        "SAI",
+        "ALO",
+        "BOT",
+        "STR",
+        "PER",
+        "ALB"
+      ],
+      "finish": [
+        "ANT",
+        "RUS",
+        "HAM",
+        "LEC",
+        "BEA",
+        "GAS",
+        "LAW",
+        "HAD",
+        "SAI",
+        "COL",
+        "HUL",
+        "LIN",
+        "BOT",
+        "OCO",
+        "PER",
+        "VER",
+        "ALO",
+        "STR",
+        "PIA",
+        "NOR",
+        "BOR",
+        "ALB"
+      ],
+      "drivers": [
+        {
+          "id": "ANT",
+          "name": "Kimi Antonelli",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "RUS",
+          "name": "George Russell",
+          "team": "Mercedes",
+          "color": "#00D7B6"
+        },
+        {
+          "id": "HAM",
+          "name": "Lewis Hamilton",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "LEC",
+          "name": "Charles Leclerc",
+          "team": "Ferrari",
+          "color": "#ED1131"
+        },
+        {
+          "id": "BEA",
+          "name": "Oliver Bearman",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "GAS",
+          "name": "Pierre Gasly",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "LAW",
+          "name": "Liam Lawson",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "HAD",
+          "name": "Isack Hadjar",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "SAI",
+          "name": "Carlos Sainz",
+          "team": "Williams",
+          "color": "#1868DB"
+        },
+        {
+          "id": "COL",
+          "name": "Franco Colapinto",
+          "team": "Alpine",
+          "color": "#00A1E8"
+        },
+        {
+          "id": "HUL",
+          "name": "Nico Hulkenberg",
+          "team": "Audi",
+          "color": "#F50537"
+        },
+        {
+          "id": "LIN",
+          "name": "Arvid Lindblad",
+          "team": "Racing Bulls",
+          "color": "#6C98FF"
+        },
+        {
+          "id": "BOT",
+          "name": "Valtteri Bottas",
+          "team": "Cadillac",
+          "color": "#909090"
+        },
+        {
+          "id": "OCO",
+          "name": "Esteban Ocon",
+          "team": "Haas F1 Team",
+          "color": "#9C9FA2"
+        },
+        {
+          "id": "PER",
+          "name": "Sergio Perez",
+          "team": "Cadillac",
+          "color": "#909090"
+        },
+        {
+          "id": "VER",
+          "name": "Max Verstappen",
+          "team": "Red Bull Racing",
+          "color": "#4781D7"
+        },
+        {
+          "id": "ALO",
+          "name": "Fernando Alonso",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "STR",
+          "name": "Lance Stroll",
+          "team": "Aston Martin",
+          "color": "#229971"
+        },
+        {
+          "id": "PIA",
+          "name": "Oscar Piastri",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "NOR",
+          "name": "Lando Norris",
+          "team": "McLaren",
+          "color": "#F47600"
+        },
+        {
+          "id": "BOR",
+          "name": "Gabriel Bortoleto",
+          "team": "Audi",
+          "color": "#F50537"
+        },
+        {
+          "id": "ALB",
+          "name": "Alexander Albon",
+          "team": "Williams",
+          "color": "#1868DB"
+        }
+      ]
+    }
+  ]
+}

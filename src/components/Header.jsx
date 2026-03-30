@@ -1,6 +1,23 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef } from 'react';
 
 export default function Header({ races, selectedRace, onRaceChange, years, selectedYear, onYearChange, theme, onThemeToggle }) {
+  const [open, setOpen] = useState(false);
+  const closeTimer = useRef(null);
+  const currentLabel = races.find(r => r.id === selectedRace)?.label ?? '—';
+
+  function handleMouseEnter() {
+    clearTimeout(closeTimer.current);
+    setOpen(true);
+  }
+  function handleMouseLeave() {
+    closeTimer.current = setTimeout(() => setOpen(false), 120);
+  }
+  function handleSelect(id) {
+    setOpen(false);
+    onRaceChange(id);
+  }
+
   return (
     <motion.header
       className="header-root"
@@ -43,37 +60,88 @@ export default function Header({ races, selectedRace, onRaceChange, years, selec
       {/* Race selector + Year picker — order 2 desktop, order 3 mobile (CSS handles this) */}
       <div className="header-tabs-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         {/* Race dropdown */}
-        <div style={{ position: 'relative', display: 'inline-block' }}>
-          <select
-            value={selectedRace}
-            onChange={e => onRaceChange(e.target.value)}
+        <div
+          style={{ position: 'relative', display: 'inline-block' }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {/* Trigger */}
+          <button
+            onClick={() => setOpen(o => !o)}
             style={{
-              appearance: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
               background: 'var(--bg-card)',
               border: '1px solid var(--border)',
               borderRadius: '8px',
               color: 'var(--text-primary)',
-              padding: '7px 36px 7px 12px',
+              padding: '7px 12px',
               fontSize: '13px',
               fontFamily: 'Inter, sans-serif',
               fontWeight: 600,
               cursor: 'pointer',
               outline: 'none',
               minWidth: '160px',
+              justifyContent: 'space-between',
             }}
           >
-            {races.map(race => (
-              <option key={race.id} value={race.id} style={{ background: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
-                {race.label}
-              </option>
-            ))}
-          </select>
-          <svg
-            style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
-            width="12" height="12" viewBox="0 0 12 12" fill="none"
-          >
-            <path d="M2 4L6 8L10 4" stroke="#e8002d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
+            {currentLabel}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0, transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+              <path d="M2 4L6 8L10 4" stroke="#e8002d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+
+          {/* Options panel */}
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ duration: 0.15, ease: 'easeOut' }}
+                style={{
+                  position: 'absolute',
+                  top: 'calc(100% + 4px)',
+                  left: 0,
+                  minWidth: '160px',
+                  background: 'var(--bg-primary)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
+                  zIndex: 200,
+                  boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
+                  maxHeight: '320px',
+                  overflowY: 'auto',
+                }}
+              >
+                {races.map(race => (
+                  <button
+                    key={race.id}
+                    onClick={() => handleSelect(race.id)}
+                    style={{
+                      display: 'block',
+                      width: '100%',
+                      textAlign: 'left',
+                      padding: '8px 12px',
+                      background: race.id === selectedRace ? 'rgba(232,0,45,0.12)' : 'transparent',
+                      color: race.id === selectedRace ? '#e8002d' : 'var(--text-primary)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      fontSize: '13px',
+                      fontFamily: 'Inter, sans-serif',
+                      fontWeight: race.id === selectedRace ? 600 : 400,
+                      transition: 'background 0.1s',
+                    }}
+                    onMouseEnter={e => { if (race.id !== selectedRace) e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+                    onMouseLeave={e => { if (race.id !== selectedRace) e.currentTarget.style.background = 'transparent'; }}
+                  >
+                    {race.label}
+                  </button>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         {/* Year picker segmented control */}

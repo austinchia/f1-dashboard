@@ -4,10 +4,10 @@ import RaceVisualizer from './components/RaceVisualizer';
 import HeroSection from './components/HeroSection';
 import { RACES, RACE_DATA } from './data/index.js';
 
-const YEARS = [2024, 2025];
+const YEARS = [2024, 2025, 2026];
 
 export default function App() {
-  const [selectedYear, setSelectedYear] = useState(2025);
+  const [selectedYear, setSelectedYear] = useState(2026);
   const racesForYear = RACES.filter(r => r.year === selectedYear);
 
   const [selectedRace, setSelectedRace] = useState(racesForYear[0].id);
@@ -17,7 +17,7 @@ export default function App() {
   const rafRef = useRef(null);
   const lastTimeRef = useRef(null);
   const dashboardRef = useRef(null);
-  const LAPS_PER_SEC = 1.5;
+  const LAPS_PER_SEC = 3;
 
   const raceMetadata = RACES.find(r => r.id === selectedRace);
   const raceData = RACE_DATA[selectedRace] ?? {
