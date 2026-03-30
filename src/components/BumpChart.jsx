@@ -55,41 +55,41 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
   const floorEntry = positionsByLap.find(d => d.lap === floorLap);
   const ceilEntry = positionsByLap.find(d => d.lap === ceilLap);
 
-  // For each retired driver, capture the position they held at their DNF lap so
-  // we can freeze the line there instead of using the post-retirement classified
-  // fill (which can collide with active drivers at the same position).
-  const dnfFrozenPos = {};
+  // Compute a fixed retired slot for each DNF driver, calculated once at their
+  // retirement lap. Latest-to-retire gets the best position among retired drivers
+  // (just below the last active driver). Slot never changes — guarantees flat lines.
+  const retiredSlots = {};
   for (const [driverId, dnfLap] of Object.entries(dnfLaps)) {
-    const dnfEntry = positionsByLap.find(d => d.lap === dnfLap);
-    const prevEntry = positionsByLap.find(d => d.lap === dnfLap - 1);
-    // Prefer the lap before DNF to avoid the jump that FastF1 sometimes
-    // applies (classified position written onto the final recorded lap).
-    dnfFrozenPos[driverId] =
-      prevEntry?.positions[driverId] ??
-      dnfEntry?.positions[driverId];
+    const checkLap = dnfLap + 1;
+    const numActive = drivers.filter(d => {
+      const dl = dnfLaps[d.id];
+      return dl == null || dl >= checkLap;
+    }).length;
+    const retiredAtOrBefore = Object.entries(dnfLaps)
+      .filter(([, dl]) => dl < checkLap)
+      .sort((a, b) => b[1] - a[1]); // latest DNF first = best slot (rank 1)
+    const rank = retiredAtOrBefore.findIndex(([id]) => id === driverId) + 1;
+    retiredSlots[driverId] = numActive + rank;
   }
 
-  // Interpolated (float) position per driver for smooth dot/label placement.
-  // Retired drivers from their DNF lap onward are frozen at their pre-retirement
-  // position — EXCEPT on the final data lap, where the freeze is released so they
-  // sweep to their official classified position. This ensures DSQ drivers (whose
-  // classified position is pushed past the DNFs) always render below retired drivers.
+  // Interpolated position per driver for dot/label placement.
+  // Active drivers: smooth interpolation between floor/ceil laps.
+  // Retiring (floorLap === dnfLap, frac > 0): hold at last real position.
+  // Retired (currentLap > dnfLap): fixed retired slot (flat, no drift).
   const interpolatedPositions = {};
   for (const driver of drivers) {
     const dnfLap = dnfLaps[driver.id];
-    if (dnfLap != null && floorLap >= dnfLap && dnfFrozenPos[driver.id] != null) {
-      const frozen = dnfFrozenPos[driver.id];
-      if (ceilLap === maxDataLap) {
-        // Smoothly sweep toward the classified position as the animation hits the final lap
-        const p1 = ceilEntry?.positions[driver.id];
-        interpolatedPositions[driver.id] = p1 != null ? frozen + frac * (p1 - frozen) : frozen;
-      } else {
-        interpolatedPositions[driver.id] = frozen;
-      }
+
+    if (dnfLap != null && currentLap > dnfLap) {
+      interpolatedPositions[driver.id] = retiredSlots[driver.id];
       continue;
     }
+
     const p0 = floorEntry?.positions[driver.id];
-    const p1 = ceilEntry?.positions[driver.id];
+    // If ceilLap crosses retirement, clamp to p0 so dot holds at last real position.
+    const rawP1 = ceilEntry?.positions[driver.id];
+    const p1 = (dnfLap != null && ceilLap > dnfLap) ? p0 : rawP1;
+
     if (p0 != null && p1 != null) {
       interpolatedPositions[driver.id] = p0 + frac * (p1 - p0);
     } else if (p0 != null) {
@@ -97,10 +97,9 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
     }
   }
 
-  // Build per-driver point arrays up to floorLap, then append interpolated tip.
-  // For laps from dnfLap onward, substitute the frozen position so the dashed tail
-  // stays flat — but restore the actual classified position on the final data lap
-  // so the terminal point reflects the official result order.
+  // Build driver polyline points — ONLY real racing positions up to dnfLap.
+  // Retired drivers' post-retirement data (FastF1-filled classified positions)
+  // is intentionally excluded; the flat dead line is drawn separately in SVG.
   const visibleLaps = positionsByLap.filter(d => d.lap <= floorLap);
   const driverPoints = {};
   for (const driver of drivers) {
@@ -110,16 +109,18 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
     for (const [abbr, pos] of Object.entries(lapEntry.positions)) {
       if (driverPoints[abbr] !== undefined) {
         const dnfLap = dnfLaps[abbr];
-        const isFrozenLap = dnfLap != null && lapEntry.lap >= dnfLap && dnfFrozenPos[abbr] != null;
-        const effectivePos = isFrozenLap && lapEntry.lap !== maxDataLap
-          ? dnfFrozenPos[abbr]
-          : pos;
-        driverPoints[abbr].push({ lap: lapEntry.lap, pos: effectivePos });
+        // Only store real racing laps (up to and including the retirement lap).
+        if (dnfLap == null || lapEntry.lap <= dnfLap) {
+          driverPoints[abbr].push({ lap: lapEntry.lap, pos });
+        }
       }
     }
   }
+  // Extend active drivers' lines to currentLap with smooth interpolation.
   if (frac > 0) {
     for (const driver of drivers) {
+      const dnfLap = dnfLaps[driver.id];
+      if (dnfLap != null && currentLap > dnfLap) continue; // retired — dead line handles this
       const ipos = interpolatedPositions[driver.id];
       if (ipos != null && driverPoints[driver.id].length > 0) {
         driverPoints[driver.id].push({ lap: currentLap, pos: ipos });
@@ -205,26 +206,10 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
             </text>
           ))}
 
-          {/* Driver polylines — split at DNF lap */}
+          {/* Driver polylines */}
           {drivers.map(driver => {
             const points = driverPoints[driver.id];
             if (points.length < 2) return null;
-            const dnfLap = dnfLaps[driver.id];
-            if (dnfLap != null && currentLap > dnfLap) {
-              const alivePoints = points.filter(p => p.lap <= dnfLap);
-              const deadPoints = points.filter(p => p.lap >= dnfLap);
-              const toStr = pts => pts.map(p => `${lapToX(p.lap, totalLaps, chartW)},${posToY(p.pos, numDrivers, chartH)}`).join(' ');
-              return (
-                <g key={driver.id}>
-                  {alivePoints.length >= 2 && (
-                    <polyline points={toStr(alivePoints)} stroke={driver.color} strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={0.85} />
-                  )}
-                  {deadPoints.length >= 2 && (
-                    <polyline points={toStr(deadPoints)} stroke={DNF_COLOR} strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="3 3" />
-                  )}
-                </g>
-              );
-            }
             const pointsStr = points
               .map(p => `${lapToX(p.lap, totalLaps, chartW)},${posToY(p.pos, numDrivers, chartH)}`)
               .join(' ');
@@ -238,6 +223,30 @@ export default function BumpChart({ positionsByLap, drivers, dnfLaps = {}, curre
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 opacity={0.85}
+              />
+            );
+          })}
+
+          {/* Retired driver flat dashed lines — drawn as a pure horizontal <line>
+              from the retirement lap x-position to the current lap x-position.
+              Guaranteed flat: no polyline segments, no diagonals, no jumps. */}
+          {drivers.map(driver => {
+            const dnfLap = dnfLaps[driver.id];
+            if (dnfLap == null || currentLap <= dnfLap) return null;
+            const slot = retiredSlots[driver.id];
+            if (slot == null) return null;
+            const y = posToY(slot, numDrivers, chartH);
+            const x1 = lapToX(dnfLap, totalLaps, chartW);
+            const x2 = Math.min(currentX, lapToX(maxDataLap, totalLaps, chartW));
+            return (
+              <line
+                key={`dnf-${driver.id}`}
+                x1={x1} y1={y}
+                x2={x2} y2={y}
+                stroke={DNF_COLOR}
+                strokeWidth={1.5}
+                strokeDasharray="4 4"
+                strokeLinecap="round"
               />
             );
           })}
