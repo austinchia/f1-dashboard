@@ -24,6 +24,9 @@ dist-ssr
 *.sw?
 
 fastf1_cache/
+scripts/.f1cache/
+scripts/__pycache__/
+*.pyc
 
 .superpowers/
 .claude/settings.local.json

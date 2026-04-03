@@ -1,6 +1,23 @@
+function formatSessionTime(ms) {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  if (hours > 0) {
+    return `${hours}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  }
+
+  return `${minutes}:${String(seconds).padStart(2, '0')}`;
+}
+
 export default function PlaybackControls({
   currentLap,
   totalLaps,
+  currentPlaybackMs = 0,
+  totalPlaybackMs = 0,
+  playbackStartMs = 0,
+  mode = 'lap',
   isPlaying,
   isFinished,
   onPlay,
@@ -8,49 +25,35 @@ export default function PlaybackControls({
   onReplay,
   onScrub,
 }) {
+  const isTimeMode = mode === 'time' && totalPlaybackMs > 0;
+  const displayedPlaybackMs = isTimeMode
+    ? Math.max(0, currentPlaybackMs - playbackStartMs)
+    : currentPlaybackMs;
+
   // Build tick labels: lap 1, every 10 laps, final lap
   const ticks = [1];
   for (let l = 10; l < totalLaps; l += 10) ticks.push(l);
   if (!ticks.includes(totalLaps)) ticks.push(totalLaps);
+
+  const timeTicks = [0, 0.25, 0.5, 0.75, 1].map(fraction => Math.round(totalPlaybackMs * fraction));
 
   function handleScrub(e) {
     onScrub(Number(e.target.value));
   }
 
   return (
-    <div style={{
-      background: 'var(--bg-card)',
-      border: '1px solid var(--border)',
-      borderRadius: '12px',
-      padding: '14px 20px',
-      display: 'flex',
-      alignItems: 'center',
-      gap: '16px',
-    }}>
+    <div className="playback-panel">
       {/* Play / Pause */}
       <button
         onClick={isFinished ? onReplay : isPlaying ? onPause : onPlay}
         aria-label={isFinished ? 'Replay' : isPlaying ? 'Pause' : 'Play'}
-        style={{
-          width: '38px',
-          height: '38px',
-          borderRadius: '8px',
-          border: 'none',
-          background: 'var(--accent-red)',
-          color: '#fff',
-          fontSize: '14px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexShrink: 0,
-        }}
+        className="playback-panel__primary"
       >
         {isFinished ? (
           // Replay
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M2 8a6 6 0 1 0 1.2-3.6" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/>
-            <path d="M2 4.4V8h3.6" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4.2 4.6A5.8 5.8 0 1 1 3.7 10.8" stroke="#fff" strokeWidth="1.8" strokeLinecap="round"/>
+            <path d="M4.3 1.9V5.3H7.7" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         ) : isPlaying ? (
           // Pause — two bars
@@ -68,50 +71,41 @@ export default function PlaybackControls({
 
       {/* Lap counter */}
       <div
-        className="orbitron"
-        style={{
-          fontSize: '13px',
-          fontWeight: 700,
-          color: 'var(--text-primary)',
-          whiteSpace: 'nowrap',
-          minWidth: '60px',
-        }}
+        className="orbitron playback-panel__lap"
       >
-        LAP {Math.floor(currentLap)}
+        {isTimeMode ? formatSessionTime(displayedPlaybackMs) : currentLap < 1 ? 'GRID' : `LAP ${Math.floor(currentLap)}`}
       </div>
 
       {/* Scrubber + ticks */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      <div className="playback-panel__scrub">
         <input
+          className="playback-panel__range"
           type="range"
-          min={1}
-          max={totalLaps}
+          min={0}
+          max={isTimeMode ? totalPlaybackMs : totalLaps}
           step="any"
-          value={currentLap}
+          value={isTimeMode ? displayedPlaybackMs : currentLap}
           onChange={handleScrub}
         />
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          fontSize: '9px',
-          color: 'var(--text-dim)',
-          fontFamily: 'Orbitron, monospace',
-          userSelect: 'none',
-        }}>
-          {ticks.map(t => (
-            <span key={t}>{t}</span>
-          ))}
+        <div className="playback-panel__ticks">
+          {isTimeMode ? (
+            timeTicks.map(tick => (
+              <span key={tick}>{formatSessionTime(tick)}</span>
+            ))
+          ) : (
+            <>
+              <span>GRID</span>
+              {ticks.map(t => (
+                <span key={t}>{t}</span>
+              ))}
+            </>
+          )}
         </div>
       </div>
 
       {/* Total */}
-      <div style={{
-        fontFamily: 'Orbitron, monospace',
-        fontSize: '11px',
-        color: 'var(--text-muted)',
-        whiteSpace: 'nowrap',
-      }}>
-        / {totalLaps}
+      <div className="playback-panel__total">
+        {isTimeMode ? `/ ${formatSessionTime(totalPlaybackMs)}` : `/ ${totalLaps}`}
       </div>
     </div>
   );

@@ -12,16 +12,25 @@ function getLaps(raceId) {
   return {
     positionsByLap: mod?.positionsByLap ?? [],
     dnfLaps: mod?.dnfLaps ?? {},
+    stints: mod?.stints ?? {},
+    safetyCars: mod?.safetyCars ?? [],
+    gapsByLap: mod?.gapsByLap ?? [],
+    fastestLap: mod?.fastestLap ?? null,
   };
 }
 
 function buildRaceData(config) {
-  const { positionsByLap, dnfLaps } = getLaps(config.race.id);
+  const { positionsByLap, dnfLaps, stints, safetyCars, gapsByLap, fastestLap } = getLaps(config.race.id);
   return {
     race: config.race,
     drivers: config.drivers,
+    grid: config.grid ?? [],
     positionsByLap,
     dnfLaps,
+    stints,
+    safetyCars,
+    gapsByLap,
+    fastestLap,
   };
 }
 
@@ -38,4 +47,3 @@ for (const config of RACE_CONFIGS_2025) {
 for (const config of RACE_CONFIGS_2026) {
   RACE_DATA[config.race.id] = buildRaceData(config);
 }
-
