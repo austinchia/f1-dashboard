@@ -51,6 +51,10 @@ def fetch_race(year, round_num):
     race_id = RACE_ID_MAP[year][round_num]
     out_path = os.path.join(OUT_DIR, f'{race_id}.json')
 
+    if os.path.exists(out_path):
+        print(f'  SKIP (exists): {race_id}')
+        return True
+
     try:
         session = fastf1.get_session(year, round_num, 'R')
         session.load(laps=True, telemetry=False, weather=False, messages=False)
