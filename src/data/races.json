@@ -48,5 +48,9 @@
   {"id": "qat2025", "label": "Qatar", "circuit": "Lusail", "date": "November 30, 2025", "laps": 57, "year": 2025},
   {"id": "adh2025", "label": "Abu Dhabi", "circuit": "Yas Marina", "date": "December 7, 2025", "laps": 58, "year": 2025},
   {"id": "aus2026", "label": "Australia", "circuit": "Melbourne", "date": "March 8, 2026", "laps": 58, "year": 2026},
-  {"id": "chn2026", "label": "China", "circuit": "Shanghai", "date": "March 15, 2026", "laps": 56, "year": 2026}
+  {"id": "chn2026", "label": "China", "circuit": "Shanghai", "date": "March 15, 2026", "laps": 56, "year": 2026},
+  {"id": "jpn2026", "label": "Japan", "circuit": "Suzuka", "date": "March 29, 2026", "laps": 53, "year": 2026},
+  {"id": "mia2026", "label": "Miami", "circuit": "Miami", "date": "May 3, 2026", "laps": 57, "year": 2026},
+  {"id": "can2026", "label": "Canada", "circuit": "Montreal", "date": "May 24, 2026", "laps": 70, "year": 2026},
+  {"id": "mon2026", "label": "Monaco", "circuit": "Monaco", "date": "June 7, 2026", "laps": 78, "year": 2026}
 ]
