@@ -27,12 +27,12 @@ RACE_ID_MAP_2025 = {
     21: 'bra2025', 22: 'lvg2025', 23: 'qat2025', 24: 'adh2025',
 }
 RACE_ID_MAP_2026 = {
-    1: 'aus2026', 2: 'chn2026', 3: 'jpn2026', 4: 'bhr2026',
-    5: 'sau2026', 6: 'mia2026', 7: 'emi2026', 8: 'mon2026',
-    9: 'esp2026', 10: 'can2026', 11: 'aut2026', 12: 'gbr2026',
-    13: 'bel2026', 14: 'hun2026', 15: 'ned2026', 16: 'ita2026',
-    17: 'aze2026', 18: 'sgp2026', 19: 'usa2026', 20: 'mex2026',
-    21: 'bra2026', 22: 'lvg2026', 23: 'qat2026', 24: 'adh2026',
+    1: 'aus2026', 2: 'chn2026', 3: 'jpn2026', 4: 'mia2026',
+    5: 'can2026', 6: 'mon2026', 7: 'emi2026', 8: 'esp2026',
+    9: 'aut2026', 10: 'gbr2026', 11: 'bel2026', 12: 'hun2026',
+    13: 'ned2026', 14: 'ita2026', 15: 'aze2026', 16: 'sgp2026',
+    17: 'usa2026', 18: 'mex2026', 19: 'bra2026', 20: 'lvg2026',
+    21: 'qat2026', 22: 'adh2026', 23: 'bhr2026', 24: 'sau2026',
 }
 
 LABEL_MAP_2024 = {
@@ -52,12 +52,12 @@ LABEL_MAP_2025 = {
     21:'Brazil', 22:'Las Vegas', 23:'Qatar', 24:'Abu Dhabi',
 }
 LABEL_MAP_2026 = {
-    1:'Australia', 2:'China', 3:'Japan', 4:'Bahrain',
-    5:'Saudi Arabia', 6:'Miami', 7:'Emilia Romagna', 8:'Monaco',
-    9:'Spain', 10:'Canada', 11:'Austria', 12:'Great Britain',
-    13:'Belgium', 14:'Hungary', 15:'Netherlands', 16:'Italy',
-    17:'Azerbaijan', 18:'Singapore', 19:'United States', 20:'Mexico',
-    21:'Brazil', 22:'Las Vegas', 23:'Qatar', 24:'Abu Dhabi',
+    1:'Australia', 2:'China', 3:'Japan', 4:'Miami',
+    5:'Canada', 6:'Monaco', 7:'Emilia Romagna', 8:'Spain',
+    9:'Austria', 10:'Great Britain', 11:'Belgium', 12:'Hungary',
+    13:'Netherlands', 14:'Italy', 15:'Azerbaijan', 16:'Singapore',
+    17:'United States', 18:'Mexico', 19:'Brazil', 20:'Las Vegas',
+    21:'Qatar', 22:'Abu Dhabi', 23:'Bahrain', 24:'Saudi Arabia',
 }
 
 CIRCUIT_MAP_2024 = {
@@ -77,12 +77,12 @@ CIRCUIT_MAP_2025 = {
     21:'São Paulo', 22:'Las Vegas', 23:'Lusail', 24:'Yas Marina',
 }
 CIRCUIT_MAP_2026 = {
-    1:'Melbourne', 2:'Shanghai', 3:'Suzuka', 4:'Sakhir',
-    5:'Jeddah', 6:'Miami', 7:'Imola', 8:'Monaco',
-    9:'Barcelona', 10:'Montreal', 11:'Spielberg', 12:'Silverstone',
-    13:'Spa', 14:'Budapest', 15:'Zandvoort', 16:'Monza',
-    17:'Baku', 18:'Marina Bay', 19:'Austin', 20:'Mexico City',
-    21:'São Paulo', 22:'Las Vegas', 23:'Lusail', 24:'Yas Marina',
+    1:'Melbourne', 2:'Shanghai', 3:'Suzuka', 4:'Miami',
+    5:'Montreal', 6:'Monaco', 7:'Imola', 8:'Barcelona',
+    9:'Spielberg', 10:'Silverstone', 11:'Spa', 12:'Budapest',
+    13:'Zandvoort', 14:'Monza', 15:'Baku', 16:'Marina Bay',
+    17:'Austin', 18:'Mexico City', 19:'São Paulo', 20:'Las Vegas',
+    21:'Lusail', 22:'Yas Marina', 23:'Sakhir', 24:'Jeddah',
 }
 
 def make_config(race_data, year, race_id_map, label_map, circuit_map):
@@ -114,9 +114,9 @@ def make_config(race_data, year, race_id_map, label_map, circuit_map):
     laps_map_2025 = {1:58,2:56,3:53,4:57,5:50,6:57,7:63,8:78,
                      9:66,10:70,11:71,12:52,13:44,14:70,15:72,16:53,
                      17:51,18:62,19:56,20:71,21:71,22:50,23:57,24:58}
-    laps_map_2026 = {1:58,2:56,3:53,4:57,5:50,6:57,7:63,8:78,
-                     9:66,10:70,11:71,12:52,13:44,14:70,15:72,16:53,
-                     17:51,18:62,19:56,20:71,21:71,22:50,23:57,24:58}
+    laps_map_2026 = {1:58,2:56,3:53,4:57,5:70,6:78,7:63,8:66,
+                     9:71,10:52,11:44,12:70,13:72,14:53,15:51,16:62,
+                     17:56,18:71,19:71,20:50,21:57,22:58,23:57,24:50}
     if year == 2024:
         laps_map = laps_map_2024
     elif year == 2025:
