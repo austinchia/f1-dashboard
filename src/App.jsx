@@ -16,7 +16,7 @@ const CIRCUIT_RENDER_MS_STEP = 33;
 export default function App() {
   const [selectedYear, setSelectedYear] = useState(2026);
   const racesForYear = RACES.filter(r => r.year === selectedYear);
-  const [selectedRace, setSelectedRace] = useState(racesForYear[0].id);
+  const [selectedRace, setSelectedRace] = useState(racesForYear[racesForYear.length - 1].id);
   const [currentLap, setCurrentLap] = useState(0);
   const [currentPlaybackMs, setCurrentPlaybackMs] = useState(0);
   const [telemetry, setTelemetry] = useState(null);

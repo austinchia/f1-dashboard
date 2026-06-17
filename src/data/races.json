@@ -52,5 +52,6 @@
   {"id": "jpn2026", "label": "Japan", "circuit": "Suzuka", "date": "March 29, 2026", "laps": 53, "year": 2026},
   {"id": "mia2026", "label": "Miami", "circuit": "Miami", "date": "May 3, 2026", "laps": 57, "year": 2026},
   {"id": "can2026", "label": "Canada", "circuit": "Montreal", "date": "May 24, 2026", "laps": 70, "year": 2026},
-  {"id": "mon2026", "label": "Monaco", "circuit": "Monaco", "date": "June 7, 2026", "laps": 78, "year": 2026}
+  {"id": "mon2026", "label": "Monaco", "circuit": "Monaco", "date": "June 7, 2026", "laps": 78, "year": 2026},
+  {"id": "bcn2026", "label": "Barcelona", "circuit": "Barcelona", "date": "June 14, 2026", "laps": 66, "year": 2026}
 ]
